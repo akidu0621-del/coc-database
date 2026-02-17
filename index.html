@@ -84,15 +84,15 @@
                 padding: 4px !important;
             }
             
-            /* アイコンモードのグリッド幅調整 */
+            /* アイコンモードのグリッド幅調整: スマホでは強制的に1列表示 */
             body.view-mode-icons:not(.focused-mode) #characterList {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+                grid-template-columns: 1fr !important;
             }
             
             /* モーダル幅 */
             .modal-box { max-width: 95% !important; }
 
-            /* --- 詳細表示・フォーカス時のスマホレイアウト修正 (ここから追加) --- */
+            /* --- 詳細表示・フォーカス時のスマホレイアウト修正 --- */
             body.view-mode-list .card, body.focused-mode .card.is-focused {
                 border-left-width: 6px !important; /* 左線を少し細くしてスペース確保 */
                 border-bottom-width: 2px !important;
