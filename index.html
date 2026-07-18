@@ -631,9 +631,7 @@
             <button onclick="toggleDarkMode()" class="w-10 h-10 flex items-center justify-center rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
                 <i id="themeIcon" class="fas fa-sun text-yellow-400"></i>
             </button>
-            <button id="backToListBtn" onclick="resetFocus()" class="hidden px-6 py-2 bg-indigo-600 text-white rounded-xl font-black text-sm shadow-lg hover:bg-indigo-700 transition">
-                <i class="fas fa-arrow-left mr-2"></i> 一覧に戻る
-            </button>
+            <button id="backToListBtn" onclick="resetFocus()" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-black text-sm shadow-lg hover:bg-indigo-700 transition hidden"><i class="fas fa-arrow-left mr-2"></i> 一覧に戻る</button>
             
             <button id="btn-delete-all" onclick="showConfirm('all')" class="admin-only px-3 py-2 bg-rose-500 text-white rounded-xl font-black text-xs shadow-sm hover:bg-rose-600 transition" title="全探索者データを削除">
                 <i class="fas fa-trash-alt mr-1"></i>
@@ -692,10 +690,10 @@
                     
                     <!-- 能力値表示切替ボタン -->
                     <div class="flex flex-col items-center justify-center border border-slate-200 dark:border-slate-700 rounded-lg p-0.5 bg-white dark:bg-slate-900 shadow-sm" title="能力値の表示基準を切替">
-                        <button onclick="changeStatDisplay('auto')" id="stat-disp-auto" class="w-full text-[10px] font-black px-3 py-0.5 rounded text-indigo-600 bg-indigo-50 dark:text-indigo-400 dark:bg-indigo-900/30 transition-colors">標準</button>
+                        <button onclick="changeStatDisplay('auto')" id="stat-disp-auto" class="w-full text-[10px] font-black px-3 py-0.5 rounded transition-colors text-indigo-600 bg-indigo-50 dark:text-indigo-400 dark:bg-indigo-900/30">標準</button>
                         <div class="flex gap-0.5 mt-0.5 w-full">
-                            <button onclick="changeStatDisplay('6th')" id="stat-disp-6th" class="flex-1 text-[10px] font-black px-1.5 py-0.5 rounded text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 transition-colors text-center">1/5</button>
-                            <button onclick="changeStatDisplay('7th')" id="stat-disp-7th" class="flex-1 text-[10px] font-black px-1.5 py-0.5 rounded text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 transition-colors text-center">×5</button>
+                            <button onclick="changeStatDisplay('6th')" id="stat-disp-6th" class="flex-1 text-[10px] font-black px-1.5 py-0.5 rounded transition-colors text-center text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800">1/5</button>
+                            <button onclick="changeStatDisplay('7th')" id="stat-disp-7th" class="flex-1 text-[10px] font-black px-1.5 py-0.5 rounded transition-colors text-center text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800">×5</button>
                         </div>
                     </div>
 
@@ -736,8 +734,8 @@
                         <option value="stat_HP_asc">HP順 (低)</option>
                         <option value="stat_MP_asc">MP順 (低)</option>
                     </select>
-                    <div id="skillSortBadge" class="hidden px-3 py-1 bg-indigo-600 text-white rounded-full text-[10px] font-black flex items-center gap-2">
-                        <span id="skillSortName"></span>
+                    <div id="skillSortBadge" class="px-3 py-1 bg-indigo-600 text-white rounded-full text-[10px] font-black flex items-center gap-2 hidden">
+                        <span id="skillSortName">技能ソート: 運転（自動車）</span>
                         <button onclick="resetFilters();"><i class="fas fa-times"></i></button>
                     </div>
                 </div>
@@ -11203,7 +11201,7 @@ CoC_「雪の降る夜に」フラグ回収
                                     <div class="flex items-center gap-2 whitespace-nowrap overflow-hidden max-w-full justify-center">
                                         <span class="px-3 py-1 edition-tag-6 rounded-lg font-black text-sm whitespace-nowrap flex-shrink-0" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">6版</span>
                                         <span class="px-4 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-slate-600 dark:text-slate-300 font-bold text-lg text-theme-sub whitespace-nowrap overflow-hidden text-ellipsis force-dark-text" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                            <span class="editable-field" data-id="5496fa61-c1cf-4048-8477-d86f8ef6d19d" data-field="age" data-bound="true">31（見た目年齢）</span>歳 / 
+                                            <span class="editable-field" data-id="5496fa61-c1cf-4048-8477-d86f8ef6d19d" data-field="age" data-bound="true">31</span>歳 / 
                                             <span class="editable-field" data-id="5496fa61-c1cf-4048-8477-d86f8ef6d19d" data-field="gender" data-bound="true">女性</span>
                                         </span>
                                     </div>
@@ -21255,7 +21253,7 @@ GM:イツキ　PL1:あきづ　PL2:めろむら　PL3:いぶし銀　PL4:Fel
                                     <div class="flex items-center gap-2 whitespace-nowrap overflow-hidden max-w-full justify-center">
                                         <span class="px-3 py-1 edition-tag-7 rounded-lg font-black text-sm whitespace-nowrap flex-shrink-0" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">7版</span>
                                         <span class="px-4 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-slate-600 dark:text-slate-300 font-bold text-lg text-theme-sub whitespace-nowrap overflow-hidden text-ellipsis force-dark-text" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                            <span class="editable-field" data-id="dd8b7320-4cd7-4bf4-9740-2fbafbc99787" data-field="age" data-bound="true">24(23+1)</span>歳 / 
+                                            <span class="editable-field" data-id="dd8b7320-4cd7-4bf4-9740-2fbafbc99787" data-field="age" data-bound="true">24(+1)</span>歳 / 
                                             <span class="editable-field" data-id="dd8b7320-4cd7-4bf4-9740-2fbafbc99787" data-field="gender" data-bound="true">男性</span>
                                         </span>
                                     </div>
@@ -31388,7 +31386,7 @@ https://iachara.com/view/11185499</span>
                                 <div class="mt-1 w-full text-xs font-bold flex items-center justify-center gap-1 whitespace-nowrap overflow-hidden" style="color: rgba(255,255,255,0.9); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
                                     <span class="truncate" title="誕生日: 1月1日"><i class="fas fa-birthday-cake mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="birthday" data-bound="true">1月1日</span></span>
                                     <span class="mx-0.5">|</span>
-                                    <span class="truncate" title="身長/体重: 149cm / 40kg"><i class="fas fa-ruler-vertical mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="height" data-bound="true">149</span>cm / <i class="fas fa-weight mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="weight" data-bound="true">40</span>kg</span>
+                                    <span class="truncate" title="身長/体重: 150cm / 40kg"><i class="fas fa-ruler-vertical mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="height" data-bound="true">150</span>cm / <i class="fas fa-weight mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="weight" data-bound="true">40</span>kg</span>
                                 </div>
 
                                 
