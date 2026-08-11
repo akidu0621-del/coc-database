@@ -631,9 +631,7 @@
             <button onclick="toggleDarkMode()" class="w-10 h-10 flex items-center justify-center rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
                 <i id="themeIcon" class="fas fa-sun text-yellow-400"></i>
             </button>
-            <button id="backToListBtn" onclick="resetFocus()" class="hidden px-6 py-2 bg-indigo-600 text-white rounded-xl font-black text-sm shadow-lg hover:bg-indigo-700 transition">
-                <i class="fas fa-arrow-left mr-2"></i> 一覧に戻る
-            </button>
+            <button id="backToListBtn" onclick="resetFocus()" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-black text-sm shadow-lg hover:bg-indigo-700 transition hidden"><i class="fas fa-arrow-left mr-2"></i> 一覧に戻る</button>
             
             <button id="btn-delete-all" onclick="showConfirm('all')" class="admin-only px-3 py-2 bg-rose-500 text-white rounded-xl font-black text-xs shadow-sm hover:bg-rose-600 transition" title="全探索者データを削除">
                 <i class="fas fa-trash-alt mr-1"></i>
@@ -30445,17 +30443,17 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                                         <span class="px-3 py-1 edition-tag-6 rounded-lg font-black text-sm whitespace-nowrap flex-shrink-0" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">6版</span>
                                         <span class="px-4 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-slate-600 dark:text-slate-300 font-bold text-lg text-theme-sub whitespace-nowrap overflow-hidden text-ellipsis force-dark-text" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                                             <span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="age" data-bound="true">28</span>歳 / 
-                                            <span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="gender" data-bound="true">男性</span>
+                                            <span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="gender" data-bound="true">女性</span>
                                         </span>
                                     </div>
-                                    <span class="px-4 py-1 rounded-lg font-black text-lg job-tag w-full text-center truncate bg-white" style="color:#646b94; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" title="エンジニア">
-                                        <span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="job" data-bound="true">エンジニア</span>
+                                    <span class="px-4 py-1 rounded-lg font-black text-lg job-tag w-full text-center truncate bg-white" style="color:#646b94; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" title="エンジニア（クトゥルフ2015参照）">
+                                        <span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="job" data-bound="true">エンジニア（クトゥルフ2015参照）</span>
                                     </span>
                                 </div>
                                 <div class="mt-1 w-full text-xs font-bold flex items-center justify-center gap-1 whitespace-nowrap overflow-hidden" style="color: rgba(255,255,255,0.9); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
                                     <span class="truncate" title="誕生日: 9月9日"><i class="fas fa-birthday-cake mr-0.5"></i><span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="birthday" data-bound="true">9月9日</span></span>
                                     <span class="mx-0.5">|</span>
-                                    <span class="truncate" title="身長/体重: 176cm / 64kg"><i class="fas fa-ruler-vertical mr-0.5"></i><span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="height" data-bound="true">176</span>cm / <i class="fas fa-weight mr-0.5"></i><span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="weight" data-bound="true">64</span>kg</span>
+                                    <span class="truncate" title="身長/体重: 160cm / 50kg"><i class="fas fa-ruler-vertical mr-0.5"></i><span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="height" data-bound="true">160</span>cm / <i class="fas fa-weight mr-0.5"></i><span class="editable-field" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="weight" data-bound="true">50</span>kg</span>
                                 </div>
 
                                 
@@ -30468,7 +30466,7 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                             <div class="mb-6">
                                 <span class="text-[9px] text-theme-muted font-black block mb-2 uppercase tracking-widest">代表シナリオ</span>
                                 <div class="p-4 rounded-xl italic text-sm font-bold text-theme-sub info-panel">
-                                    <span class="editable-field block w-full force-dark-text" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="scenario" data-bound="true">未記入</span>
+                                    <span class="editable-field block w-full force-dark-text" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="scenario" data-bound="true">豪華客船と怪盗団</span>
                                 </div>
                             </div>
                             <div class="mb-8">
@@ -30538,8 +30536,8 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                         
                             <div class="stat-box border-edu">
                                 <span class="stat-label">EDU</span>
-                                <span class="stat-val editable-field force-dark-text" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="stats" data-key="EDU" data-bound="true">16</span>
-                                <span class="stat-sub-val">(80)</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="stats" data-key="EDU" data-bound="true">17</span>
+                                <span class="stat-sub-val">(85)</span>
                             </div>
                         
                             </div>
@@ -30582,7 +30580,7 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                                     </span>
                                 </div>
                                 <div class="flex items-center shrink-0">
-                                    <span class="text-indigo-500 font-black mr-2">40%</span>
+                                    <span class="text-indigo-500 font-black mr-2">44%</span>
                                     
                             <div class="flex items-center gap-1.5 ml-2">
                                 <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('6bde6e5f-b8b5-4056-bc72-0a43934eb696', '機械修理')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
@@ -30633,21 +30631,21 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                                 </div>
                             </div>
                         
-                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('重機械操作')" title="重機械操作">
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('製作（衣装）')" title="製作（衣装）">
                                 <div class="flex items-center gap-2 overflow-hidden flex-1">
-                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('重機械操作')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('製作（衣装）')" title="この技能でソート"><i class="fas fa-sort"></i></button>
                                     <span class="skill-name truncate dark:text-slate-300 force-dark-text">
                                         
-                                        重機械操作
+                                        製作（衣装）
                                     </span>
                                 </div>
                                 <div class="flex items-center shrink-0">
-                                    <span class="text-indigo-500 font-black mr-2">20%</span>
+                                    <span class="text-indigo-500 font-black mr-2">60%</span>
                                     
                             <div class="flex items-center gap-1.5 ml-2">
-                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('6bde6e5f-b8b5-4056-bc72-0a43934eb696', '重機械操作')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
-                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('6bde6e5f-b8b5-4056-bc72-0a43934eb696', '重機械操作', -1)"><i class="fas fa-minus"></i></button>
-                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('6bde6e5f-b8b5-4056-bc72-0a43934eb696', '重機械操作', 1)"><i class="fas fa-plus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('6bde6e5f-b8b5-4056-bc72-0a43934eb696', '製作（衣装）')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('6bde6e5f-b8b5-4056-bc72-0a43934eb696', '製作（衣装）', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('6bde6e5f-b8b5-4056-bc72-0a43934eb696', '製作（衣装）', 1)"><i class="fas fa-plus"></i></button>
                             </div>
                         
                                 </div>
@@ -30722,7 +30720,7 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                                     </span>
                                 </div>
                                 <div class="flex items-center shrink-0">
-                                    <span class="text-indigo-500 font-black mr-2">65%</span>
+                                    <span class="text-indigo-500 font-black mr-2">50%</span>
                                     
                             <div class="flex items-center gap-1.5 ml-2">
                                 <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('6bde6e5f-b8b5-4056-bc72-0a43934eb696', '図書館')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
@@ -30782,7 +30780,7 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                                     </span>
                                 </div>
                                 <div class="flex items-center shrink-0">
-                                    <span class="text-indigo-500 font-black mr-2">65%</span>
+                                    <span class="text-indigo-500 font-black mr-2">60%</span>
                                     
                             <div class="flex items-center gap-1.5 ml-2">
                                 <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('6bde6e5f-b8b5-4056-bc72-0a43934eb696', 'ほかの言語（英語）')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
@@ -45520,12 +45518,12 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
                             <div id="stat-gender" class="flex flex-col gap-2">
                 <div class="stat-item-pop">
                     <span class="text-[9px] font-black dark:text-slate-300 force-dark-text">男性</span>
-                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-sky-100 text-sky-600">62</span>
+                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-sky-100 text-sky-600">61</span>
                 </div>
             
                 <div class="stat-item-pop">
                     <span class="text-[9px] font-black dark:text-slate-300 force-dark-text">女性</span>
-                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-pink-100 text-pink-600">30</span>
+                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-pink-100 text-pink-600">31</span>
                 </div>
             
                 <div class="stat-item-pop">
@@ -45620,8 +45618,8 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
                                 <span class="stats-sub-header group-hover:text-indigo-500 transition-colors">身長データ <i class="fas fa-external-link-alt ml-1 text-[10px] opacity-50"></i></span>
                                 <div id="stat-height-summary" class="space-y-1">
                 <div class="flex justify-around text-[10px] font-bold text-slate-500 dark:text-slate-400 mt-1">
-                    <span class="force-dark-text"><i class="fas fa-mars text-sky-500 mr-1"></i>Avg: 171.4cm</span>
-                    <span class="force-dark-text"><i class="fas fa-venus text-pink-500 mr-1"></i>Avg: 158.2cm</span>
+                    <span class="force-dark-text"><i class="fas fa-mars text-sky-500 mr-1"></i>Avg: 171.3cm</span>
+                    <span class="force-dark-text"><i class="fas fa-venus text-pink-500 mr-1"></i>Avg: 158.3cm</span>
                 </div>
             </div>
                             </div>
@@ -45837,10 +45835,10 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
     </div>
 
     <!-- Modals -->
-    <div id="confirmModal" class="modal-overlay">
+    <div id="confirmModal" class="modal-overlay" style="display: none;">
         <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl max-w-sm w-full text-center shadow-2xl modal-box modal-bg">
             <h3 class="text-lg font-black mb-2 text-theme-main modal-text">確認</h3>
-            <p id="confirmMessage" class="text-theme-sub text-xs mb-6 modal-text"></p>
+            <p id="confirmMessage" class="text-theme-sub text-xs mb-6 modal-text"><span class="font-bold text-indigo-500">廣井 蒼空</span><br>は既に登録されています。<br>データを更新しますか？</p>
             <div id="confirmButtonsStandard" class="flex gap-2 w-full">
                 <button onclick="closeConfirm()" class="flex-1 py-3 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-black rounded-xl text-xs force-dark-text">キャンセル</button>
                 <button id="confirmExecBtn" class="flex-1 py-3 bg-rose-500 text-white font-black rounded-xl text-xs">実行</button>
@@ -48459,7 +48457,7 @@ function updateSessionOptions() {
                 
                 // ▼ データベース（LocalStorage等）に保存する関数があれば、ここで呼び出してください ▼
                 // saveData(); または saveCharacters(); など（環境に合わせて変更してください）
-                
+                saveData();
                 // 画面を再描画して反映する
                 renderAll(); 
             }
