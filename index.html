@@ -48756,6 +48756,24 @@ function updateSessionOptions() {
                 // 画面を再描画して反映する
                 renderAll(); 
                 setTimeout(() => {
+                    function checkUrlAndJump() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const targetId = urlParams.get('id');
+            if (!targetId) return; // URLにIDがなければ終了
+
+            // Web公開版ではデータの読み込みに時間がかかる場合があるため、データが空なら少し待つ
+            if (characters.length === 0) {
+                setTimeout(checkUrlAndJump, 100); // 0.1秒後にまたチェックし直す
+                return;
+            }
+
+            // データが無事に読み込まれ、該当のキャラクターが存在すれば開く
+            if (characters.find(c => c.id === targetId)) {
+                jumpToChar(targetId);
+            }
+        }
+        // チェック処理をスタート
+        checkUrlAndJump();
             const urlParams = new URLSearchParams(window.location.search);
             const targetId = urlParams.get('id');
             // URLにIDがあり、かつそのキャラクターが存在する場合のみ開く
