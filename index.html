@@ -48756,22 +48756,34 @@ function updateSessionOptions() {
                 // 画面を再描画して反映する
                 renderAll(); 
                 setTimeout(() => {
-                    function checkUrlAndJump() {
+                    function checkUrlAndJump(retryCount = 0) {
             const urlParams = new URLSearchParams(window.location.search);
             const targetId = urlParams.get('id');
             if (!targetId) return; // URLにIDがなければ終了
 
-            // Web公開版ではデータの読み込みに時間がかかる場合があるため、データが空なら少し待つ
-            if (characters.length === 0) {
-                setTimeout(checkUrlAndJump, 100); // 0.1秒後にまたチェックし直す
+            // IDが完全に一致するキャラクターがデータ内に存在するかチェック
+            const targetChar = characters.find(c => String(c.id) === String(targetId));
+
+            // まだ読み込まれていない場合は0.1秒待って再チェック（最大10秒間）
+            if (!targetChar) {
+                if (retryCount >= 100) {
+                    console.warn("指定されたキャラクターデータの読み込みにタイムアウトしました。");
+                    return; 
+                }
+                setTimeout(() => checkUrlAndJump(retryCount + 1), 100);
                 return;
             }
 
-            // データが無事に読み込まれ、該当のキャラクターが存在すれば開く
-            if (characters.find(c => c.id === targetId)) {
+            // データが無事に読み込まれたら、画面の描画が完全に落ち着くのを0.3秒待ってから開く
+            setTimeout(() => {
+                // 万が一別タブが開かれていたら探索者タブに強制移動
+                if (typeof currentTab !== 'undefined' && currentTab !== 'investigator') {
+                    switchTab('investigator', false);
+                }
                 jumpToChar(targetId);
-            }
+            }, 300);
         }
+        
         // チェック処理をスタート
         checkUrlAndJump();
             const urlParams = new URLSearchParams(window.location.search);
