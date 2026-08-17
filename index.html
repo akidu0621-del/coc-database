@@ -47404,35 +47404,6 @@ function updateSessionOptions() {
                         btn.classList.toggle('text-slate-400', !isActive);
                     }
                 });
-                // 初回読み込み時のみURLをチェックするフラグ（まだなければ作成）
-        if (typeof window.initialUrlCheckDone === 'undefined') {
-            window.initialUrlCheckDone = false;
-        }
-
-        // 初回の描画完了時、かつキャラクターデータが存在する場合のみ実行
-        if (!window.initialUrlCheckDone && typeof characters !== 'undefined' && characters.length > 0) {
-            const urlParams = new URLSearchParams(window.location.search);
-            const targetId = urlParams.get('id');
-            
-            if (targetId) {
-                const targetChar = characters.find(c => String(c.id) === String(targetId));
-                if (targetChar) {
-                    window.initialUrlCheckDone = true; // 2回目以降は発動しないようにロック
-                    
-                    // 描画が完全に画面に反映されるのを一瞬（0.1秒）待ってから開く
-                    setTimeout(() => {
-                        // 念のため探索者タブを表示状態にする
-                        if (typeof currentTab !== 'undefined' && currentTab !== 'investigator' && typeof switchTab === 'function') {
-                            switchTab('investigator', false);
-                        }
-                        jumpToChar(targetId);
-                    }, 100);
-                }
-            } else {
-                // URLにIDが無い場合も、チェック完了としてロックする
-                window.initialUrlCheckDone = true;
-            }
-        }
             }
             
             ['6版', '7版'].forEach(v => {
@@ -48785,6 +48756,36 @@ function updateSessionOptions() {
                 // 画面を再描画して反映する
                 renderAll(); 
                 setTimeout(() => {
+                    function checkUrlAndJump(retryCount = 0) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const targetId = urlParams.get('id');
+            if (!targetId) return; // URLにIDがなければ終了
+
+            // IDが完全に一致するキャラクターがデータ内に存在するかチェック
+            const targetChar = characters.find(c => String(c.id) === String(targetId));
+
+            // まだ読み込まれていない場合は0.1秒待って再チェック（最大10秒間）
+            if (!targetChar) {
+                if (retryCount >= 100) {
+                    console.warn("指定されたキャラクターデータの読み込みにタイムアウトしました。");
+                    return; 
+                }
+                setTimeout(() => checkUrlAndJump(retryCount + 1), 100);
+                return;
+            }
+
+            // データが無事に読み込まれたら、画面の描画が完全に落ち着くのを0.3秒待ってから開く
+            setTimeout(() => {
+                // 万が一別タブが開かれていたら探索者タブに強制移動
+                if (typeof currentTab !== 'undefined' && currentTab !== 'investigator') {
+                    switchTab('investigator', false);
+                }
+                jumpToChar(targetId);
+            }, 300);
+        }
+        
+        // チェック処理をスタート
+        checkUrlAndJump();
             const urlParams = new URLSearchParams(window.location.search);
             const targetId = urlParams.get('id');
             // URLにIDがあり、かつそのキャラクターが存在する場合のみ開く
@@ -49044,6 +49045,17 @@ function updateSessionOptions() {
                 } catch(e) { console.error(e); }
             } else {
                 loadData();
+            }
+            const urlParams = new URLSearchParams(window.location.search);
+            const targetId = urlParams.get('id');
+            
+            if (targetId && typeof characters !== 'undefined') {
+                // キャラクターが存在するか確認
+            const targetChar = characters.find(c => String(c.id) === String(targetId));
+                if (targetChar) {
+                    // IDがあれば、focusedCharId にセットしておく
+                    focusedCharId = String(targetId);
+                }
             }
             const savedTheme = localStorage.getItem('coc_db_theme');
             if(savedTheme === 'dark') {
