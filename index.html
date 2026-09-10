@@ -663,16 +663,16 @@
 
         <!-- タブ切り替え -->
         <div class="flex border-b border-slate-200 dark:border-slate-700 mb-6 overflow-x-auto">
-            <button onclick="switchTab('investigator', true)" id="tab-investigator" class="px-6 py-3 text-sm font-black border-b-2 border-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 whitespace-nowrap transition-colors">
+            <button onclick="switchTab('investigator', true)" id="tab-investigator" class="px-6 py-3 text-sm font-black border-b-2 border-indigo-500 text-indigo-600 dark:text-indigo-400 whitespace-nowrap">
                 <i class="fas fa-users mr-2"></i>探索者
             </button>
-            <button onclick="switchTab('session', true)" id="tab-session" class="px-6 py-3 text-sm font-black border-b-2 border-indigo-500 text-indigo-600 dark:text-indigo-400 whitespace-nowrap">
+            <button onclick="switchTab('session', true)" id="tab-session" class="px-6 py-3 text-sm font-black border-b-2 border-transparent text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 whitespace-nowrap transition-colors">
                 <i class="fas fa-book-open mr-2"></i>卓履歴
             </button>
         </div>
 
         <!-- ================= 探索者ビュー ================= -->
-        <div id="investigatorView" class="hidden">
+        <div id="investigatorView" class="">
             <div class="flex flex-wrap justify-between items-center mb-6 gap-4 sticky top-0 z-[900] py-2 bg-[var(--bg-main)] transition-colors">
                 <div class="flex items-center flex-wrap gap-2 md:gap-4" id="normalToolbar">
                     <button onclick="setViewMode('simple')" id="btn-mode-simple" data-mode="simple" class="view-btn font-black py-2 border-b-2 transition-all border-indigo-500 text-indigo-600 force-dark-text-muted active">シンプル</button>
@@ -697,7 +697,7 @@
                         </div>
                     </div>
 
-                    <select id="skillSelect" onchange="filterBySkill(this.value)" class="bg-transparent text-xs font-black outline-none cursor-pointer max-w-[150px] dark:text-slate-300 force-dark-text ml-2"><option value="">技能で抽出・ソート...</option><option value="38口径(9mm)リボルバー">38口径(9mm)リボルバー</option><option value="SIVA">SIVA</option><option value="アイゼン">アイゼン</option><option value="オカルト">オカルト</option><option value="キック">キック</option><option value="クトゥルフ神話">クトゥルフ神話</option><option value="ゲートボール">ゲートボール</option><option value="こぶし">こぶし</option><option value="コンピューター">コンピューター</option><option value="サバイバル（ジャングル）">サバイバル（ジャングル）</option><option value="サバイバル（山岳）">サバイバル（山岳）</option><option value="サバイバル（森林）">サバイバル（森林）</option><option value="サバイバル（洋上）">サバイバル（洋上）</option><option value="サルーキ">サルーキ</option><option value="シュナウザー22">シュナウザー22</option><option value="ショットガン">ショットガン</option><option value="ナイフ">ナイフ</option><option value="ナイフ（メス）">ナイフ（メス）</option><option value="ナビゲート">ナビゲート</option><option value="ピッケル">ピッケル</option><option value="ほかの言語（サンスクリット語）">ほかの言語（サンスクリット語）</option><option value="ほかの言語（スペイン語）">ほかの言語（スペイン語）</option><option value="ほかの言語（ドイツ語）">ほかの言語（ドイツ語）</option><option value="ほかの言語（フランス語）">ほかの言語（フランス語）</option><option value="ほかの言語（ラテン語）">ほかの言語（ラテン語）</option><option value="ほかの言語（英語）">ほかの言語（英語）</option><option value="ほかの言語（中国語）">ほかの言語（中国語）</option><option value="ほかの言語（日本語）">ほかの言語（日本語）</option><option value="ほかの言語（猫語）">ほかの言語（猫語）</option><option value="マーシャルアーツ">マーシャルアーツ</option><option value="暗器（ナイフ）">暗器（ナイフ）</option><option value="威圧">威圧</option><option value="医学">医学</option><option value="育児">育児</option><option value="隠す">隠す</option><option value="隠れる">隠れる</option><option value="隠密">隠密</option><option value="運転（スケボー）">運転（スケボー）</option><option value="運転（バイク）">運転（バイク）</option><option value="運転（ローラーブレード）">運転（ローラーブレード）</option><option value="運転（自動車）">運転（自動車）</option><option value="運転（自動二輪）">運転（自動二輪）</option><option value="運転（普通二輪）">運転（普通二輪）</option><option value="応急手当">応急手当</option><option value="化学">化学</option><option value="科学（化学）">科学（化学）</option><option value="科学（気象学）">科学（気象学）</option><option value="科学（生物学）">科学（生物学）</option><option value="科学（地質学）">科学（地質学）</option><option value="科学（動物学）">科学（動物学）</option><option value="科学（物理学）">科学（物理学）</option><option value="科学（薬学）">科学（薬学）</option><option value="回避">回避</option><option value="鑑定">鑑定</option><option value="機械修理">機械修理</option><option value="近接戦闘（テコンドー）">近接戦闘（テコンドー）</option><option value="近接戦闘（格闘）">近接戦闘（格闘）</option><option value="近接戦闘（空手）">近接戦闘（空手）</option><option value="近接戦闘（護身術）">近接戦闘（護身術）</option><option value="近接戦闘（合気道）">近接戦闘（合気道）</option><option value="近接戦闘（杖）">近接戦闘（杖）</option><option value="近接戦闘（刀剣）">近接戦闘（刀剣）</option><option value="経理">経理</option><option value="芸術（「忘れろビーム」）">芸術（「忘れろビーム」）</option><option value="芸術（あやとり）">芸術（あやとり）</option><option value="芸術（イカサマ）">芸術（イカサマ）</option><option value="芸術（カリスマ）">芸術（カリスマ）</option><option value="芸術（キーボード）">芸術（キーボード）</option><option value="芸術（ダンス（剣舞））">芸術（ダンス（剣舞））</option><option value="芸術（ダンス）">芸術（ダンス）</option><option value="芸術（ツッコミ）">芸術（ツッコミ）</option><option value="芸術（テイスティング）">芸術（テイスティング）</option><option value="芸術（ファッションチェック（甘口））">芸術（ファッションチェック（甘口））</option><option value="芸術（プレッシャー）">芸術（プレッシャー）</option><option value="芸術（メイク）">芸術（メイク）</option><option value="芸術（ゆめにっき（夢語り））">芸術（ゆめにっき（夢語り））</option><option value="芸術（暗殺）">芸術（暗殺）</option><option value="芸術（演劇）">芸術（演劇）</option><option value="芸術（歌唱）">芸術（歌唱）</option><option value="芸術（絵画）">芸術（絵画）</option><option value="芸術（口笛）">芸術（口笛）</option><option value="芸術（彩色見美（さいしょくけんび））">芸術（彩色見美（さいしょくけんび））</option><option value="芸術（雑技・演舞）">芸術（雑技・演舞）</option><option value="芸術（写生）">芸術（写生）</option><option value="芸術（手品）">芸術（手品）</option><option value="芸術（手話）">芸術（手話）</option><option value="芸術（書道）">芸術（書道）</option><option value="芸術（神の舌（ゴッド・タン））">芸術（神の舌（ゴッド・タン））</option><option value="芸術（占術）">芸術（占術）</option><option value="芸術（素潜り）">芸術（素潜り）</option><option value="芸術（掃除（ルメナージュ））">芸術（掃除（ルメナージュ））</option><option value="芸術（釣り）">芸術（釣り）</option><option value="芸術（天体観測）">芸術（天体観測）</option><option value="芸術（美術）">芸術（美術）</option><option value="芸術（物語）">芸術（物語）</option><option value="芸術（民族舞踊（熊送り））">芸術（民族舞踊（熊送り））</option><option value="芸術（踊り食い）">芸術（踊り食い）</option><option value="芸術（霊感（シックス・センス））">芸術（霊感（シックス・センス））</option><option value="芸術／製作（ウィンク☆）">芸術／製作（ウィンク☆）</option><option value="芸術／製作（オカリナ）">芸術／製作（オカリナ）</option><option value="芸術／製作（しつけ）">芸術／製作（しつけ）</option><option value="芸術／製作（ダンス）">芸術／製作（ダンス）</option><option value="芸術／製作（トリミング）">芸術／製作（トリミング）</option><option value="芸術／製作（ハーモニカ）">芸術／製作（ハーモニカ）</option><option value="芸術／製作（ペン入れ）">芸術／製作（ペン入れ）</option><option value="芸術／製作（絵画）">芸術／製作（絵画）</option><option value="芸術／製作（楽器演奏（ギター））">芸術／製作（楽器演奏（ギター））</option><option value="芸術／製作（作曲）">芸術／製作（作曲）</option><option value="芸術／製作（写真術）">芸術／製作（写真術）</option><option value="芸術／製作（水平思考）">芸術／製作（水平思考）</option><option value="芸術／製作（釣り）">芸術／製作（釣り）</option><option value="芸術／製作（能楽）">芸術／製作（能楽）</option><option value="芸術／製作（文学）">芸術／製作（文学）</option><option value="芸術／製作（料理）">芸術／製作（料理）</option><option value="剣">剣</option><option value="拳銃">拳銃</option><option value="鍵開け">鍵開け</option><option value="言いくるめ">言いくるめ</option><option value="考古学">考古学</option><option value="三節棍">三節棍</option><option value="自然">自然</option><option value="写真術">写真術</option><option value="射撃（サブマシンガン）">射撃（サブマシンガン）</option><option value="射撃（ライフル／ショットガン）">射撃（ライフル／ショットガン）</option><option value="射撃（拳銃）">射撃（拳銃）</option><option value="手さばき">手さばき</option><option value="重機械操作">重機械操作</option><option value="乗馬">乗馬</option><option value="杖（モーニングスター）">杖（モーニングスター）</option><option value="信用">信用</option><option value="心理学">心理学</option><option value="人類学">人類学</option><option value="図書館">図書館</option><option value="水泳">水泳</option><option value="生物学">生物学</option><option value="精神分析">精神分析</option><option value="製作（アメリカーノ）">製作（アメリカーノ）</option><option value="製作（カクテル）">製作（カクテル）</option><option value="製作（デコレーション）">製作（デコレーション）</option><option value="製作（ぬいぐるみ）">製作（ぬいぐるみ）</option><option value="製作（フェイクニュース）">製作（フェイクニュース）</option><option value="製作（衣装）">製作（衣装）</option><option value="製作（火炎瓶）">製作（火炎瓶）</option><option value="製作（絵画）">製作（絵画）</option><option value="製作（裁ち縫い）">製作（裁ち縫い）</option><option value="製作（刺青）">製作（刺青）</option><option value="製作（小道具）">製作（小道具）</option><option value="製作（折り紙）">製作（折り紙）</option><option value="製作（料理）">製作（料理）</option><option value="西洋美術史">西洋美術史</option><option value="説得">説得</option><option value="素手">素手</option><option value="組みつき">組みつき</option><option value="操縦（蒸気機関車）">操縦（蒸気機関車）</option><option value="操縦（船舶）">操縦（船舶）</option><option value="値切り">値切り</option><option value="地質学">地質学</option><option value="跳躍">跳躍</option><option value="追跡">追跡</option><option value="天文学">天文学</option><option value="伝承（都市伝説）">伝承（都市伝説）</option><option value="電気修理">電気修理</option><option value="電子工学">電子工学</option><option value="登攀">登攀</option><option value="投擲">投擲</option><option value="頭突き">頭突き</option><option value="動物使い">動物使い</option><option value="日本刀">日本刀</option><option value="忍び歩き">忍び歩き</option><option value="博物学">博物学</option><option value="物理学">物理学</option><option value="聞き耳">聞き耳</option><option value="変装">変装</option><option value="母国語（ラテン語）">母国語（ラテン語）</option><option value="母国語（英語）">母国語（英語）</option><option value="法律">法律</option><option value="本草学">本草学</option><option value="魅惑">魅惑</option><option value="夢の知識">夢の知識</option><option value="夢見">夢見</option><option value="目星">目星</option><option value="薬学">薬学</option><option value="歴史">歴史</option></select>
+                    <select id="skillSelect" onchange="filterBySkill(this.value)" class="bg-transparent text-xs font-black outline-none cursor-pointer max-w-[150px] dark:text-slate-300 force-dark-text ml-2"><option value="">技能で抽出・ソート...</option><option value="38口径(9mm)リボルバー">38口径(9mm)リボルバー</option><option value="SIVA">SIVA</option><option value="アイゼン">アイゼン</option><option value="オカルト">オカルト</option><option value="キック">キック</option><option value="クトゥルフ神話">クトゥルフ神話</option><option value="ゲートボール">ゲートボール</option><option value="こぶし">こぶし</option><option value="コンピューター">コンピューター</option><option value="サバイバル（ジャングル）">サバイバル（ジャングル）</option><option value="サバイバル（極地）">サバイバル（極地）</option><option value="サバイバル（山岳）">サバイバル（山岳）</option><option value="サバイバル（森林）">サバイバル（森林）</option><option value="サバイバル（洋上）">サバイバル（洋上）</option><option value="サルーキ">サルーキ</option><option value="シュナウザー22">シュナウザー22</option><option value="ショットガン">ショットガン</option><option value="ナイフ">ナイフ</option><option value="ナイフ（メス）">ナイフ（メス）</option><option value="ナビゲート">ナビゲート</option><option value="ピッケル">ピッケル</option><option value="ほかの言語（サンスクリット語）">ほかの言語（サンスクリット語）</option><option value="ほかの言語（スペイン語）">ほかの言語（スペイン語）</option><option value="ほかの言語（ドイツ語）">ほかの言語（ドイツ語）</option><option value="ほかの言語（フランス語）">ほかの言語（フランス語）</option><option value="ほかの言語（ラテン語）">ほかの言語（ラテン語）</option><option value="ほかの言語（英語）">ほかの言語（英語）</option><option value="ほかの言語（中国語）">ほかの言語（中国語）</option><option value="ほかの言語（日本語）">ほかの言語（日本語）</option><option value="ほかの言語（猫語）">ほかの言語（猫語）</option><option value="マーシャルアーツ">マーシャルアーツ</option><option value="暗器（ナイフ）">暗器（ナイフ）</option><option value="威圧">威圧</option><option value="医学">医学</option><option value="育児">育児</option><option value="隠す">隠す</option><option value="隠れる">隠れる</option><option value="隠密">隠密</option><option value="運転（スケボー）">運転（スケボー）</option><option value="運転（バイク）">運転（バイク）</option><option value="運転（ローラーブレード）">運転（ローラーブレード）</option><option value="運転（自動車）">運転（自動車）</option><option value="運転（自動二輪）">運転（自動二輪）</option><option value="運転（普通二輪）">運転（普通二輪）</option><option value="応急手当">応急手当</option><option value="化学">化学</option><option value="科学（化学）">科学（化学）</option><option value="科学（気象学）">科学（気象学）</option><option value="科学（生物学）">科学（生物学）</option><option value="科学（地質学）">科学（地質学）</option><option value="科学（動物学）">科学（動物学）</option><option value="科学（物理学）">科学（物理学）</option><option value="科学（薬学）">科学（薬学）</option><option value="回避">回避</option><option value="鑑定">鑑定</option><option value="機械修理">機械修理</option><option value="近接戦闘（テコンドー）">近接戦闘（テコンドー）</option><option value="近接戦闘（格闘）">近接戦闘（格闘）</option><option value="近接戦闘（空手）">近接戦闘（空手）</option><option value="近接戦闘（護身術）">近接戦闘（護身術）</option><option value="近接戦闘（合気道）">近接戦闘（合気道）</option><option value="近接戦闘（杖）">近接戦闘（杖）</option><option value="近接戦闘（刀剣）">近接戦闘（刀剣）</option><option value="経理">経理</option><option value="芸術（「忘れろビーム」）">芸術（「忘れろビーム」）</option><option value="芸術（あやとり）">芸術（あやとり）</option><option value="芸術（イカサマ）">芸術（イカサマ）</option><option value="芸術（カリスマ）">芸術（カリスマ）</option><option value="芸術（キーボード）">芸術（キーボード）</option><option value="芸術（ダンス（剣舞））">芸術（ダンス（剣舞））</option><option value="芸術（ダンス）">芸術（ダンス）</option><option value="芸術（ツッコミ）">芸術（ツッコミ）</option><option value="芸術（テイスティング）">芸術（テイスティング）</option><option value="芸術（ファッションチェック（甘口））">芸術（ファッションチェック（甘口））</option><option value="芸術（プレッシャー）">芸術（プレッシャー）</option><option value="芸術（メイク）">芸術（メイク）</option><option value="芸術（ゆめにっき（夢語り））">芸術（ゆめにっき（夢語り））</option><option value="芸術（暗殺）">芸術（暗殺）</option><option value="芸術（演劇）">芸術（演劇）</option><option value="芸術（歌唱）">芸術（歌唱）</option><option value="芸術（絵画）">芸術（絵画）</option><option value="芸術（口笛）">芸術（口笛）</option><option value="芸術（彩色見美（さいしょくけんび））">芸術（彩色見美（さいしょくけんび））</option><option value="芸術（雑技・演舞）">芸術（雑技・演舞）</option><option value="芸術（写生）">芸術（写生）</option><option value="芸術（手品）">芸術（手品）</option><option value="芸術（手話）">芸術（手話）</option><option value="芸術（書道）">芸術（書道）</option><option value="芸術（神の舌（ゴッド・タン））">芸術（神の舌（ゴッド・タン））</option><option value="芸術（占術）">芸術（占術）</option><option value="芸術（素潜り）">芸術（素潜り）</option><option value="芸術（掃除（ルメナージュ））">芸術（掃除（ルメナージュ））</option><option value="芸術（釣り）">芸術（釣り）</option><option value="芸術（天体観測）">芸術（天体観測）</option><option value="芸術（美術）">芸術（美術）</option><option value="芸術（物語）">芸術（物語）</option><option value="芸術（民族舞踊（熊送り））">芸術（民族舞踊（熊送り））</option><option value="芸術（踊り食い）">芸術（踊り食い）</option><option value="芸術（霊感（シックス・センス））">芸術（霊感（シックス・センス））</option><option value="芸術／製作（ウィンク☆）">芸術／製作（ウィンク☆）</option><option value="芸術／製作（オカリナ）">芸術／製作（オカリナ）</option><option value="芸術／製作（しつけ）">芸術／製作（しつけ）</option><option value="芸術／製作（ダンス）">芸術／製作（ダンス）</option><option value="芸術／製作（トリミング）">芸術／製作（トリミング）</option><option value="芸術／製作（ハーモニカ）">芸術／製作（ハーモニカ）</option><option value="芸術／製作（ペン入れ）">芸術／製作（ペン入れ）</option><option value="芸術／製作（絵画）">芸術／製作（絵画）</option><option value="芸術／製作（楽器演奏（ギター））">芸術／製作（楽器演奏（ギター））</option><option value="芸術／製作（作曲）">芸術／製作（作曲）</option><option value="芸術／製作（写真術）">芸術／製作（写真術）</option><option value="芸術／製作（水平思考）">芸術／製作（水平思考）</option><option value="芸術／製作（釣り）">芸術／製作（釣り）</option><option value="芸術／製作（能楽）">芸術／製作（能楽）</option><option value="芸術／製作（文学）">芸術／製作（文学）</option><option value="芸術／製作（料理）">芸術／製作（料理）</option><option value="剣">剣</option><option value="拳銃">拳銃</option><option value="鍵開け">鍵開け</option><option value="言いくるめ">言いくるめ</option><option value="考古学">考古学</option><option value="三節棍">三節棍</option><option value="自然">自然</option><option value="写真術">写真術</option><option value="射撃（サブマシンガン）">射撃（サブマシンガン）</option><option value="射撃（ライフル／ショットガン）">射撃（ライフル／ショットガン）</option><option value="射撃（拳銃）">射撃（拳銃）</option><option value="手さばき">手さばき</option><option value="重機械操作">重機械操作</option><option value="乗馬">乗馬</option><option value="杖（モーニングスター）">杖（モーニングスター）</option><option value="信用">信用</option><option value="心理学">心理学</option><option value="人類学">人類学</option><option value="図書館">図書館</option><option value="水泳">水泳</option><option value="生物学">生物学</option><option value="精神分析">精神分析</option><option value="製作（アメリカーノ）">製作（アメリカーノ）</option><option value="製作（カクテル）">製作（カクテル）</option><option value="製作（デコレーション）">製作（デコレーション）</option><option value="製作（ぬいぐるみ）">製作（ぬいぐるみ）</option><option value="製作（フェイクニュース）">製作（フェイクニュース）</option><option value="製作（衣装）">製作（衣装）</option><option value="製作（火炎瓶）">製作（火炎瓶）</option><option value="製作（絵画）">製作（絵画）</option><option value="製作（裁ち縫い）">製作（裁ち縫い）</option><option value="製作（刺青）">製作（刺青）</option><option value="製作（小道具）">製作（小道具）</option><option value="製作（折り紙）">製作（折り紙）</option><option value="製作（陶芸）">製作（陶芸）</option><option value="製作（料理）">製作（料理）</option><option value="西洋美術史">西洋美術史</option><option value="説得">説得</option><option value="素手">素手</option><option value="組みつき">組みつき</option><option value="操縦（蒸気機関車）">操縦（蒸気機関車）</option><option value="操縦（船舶）">操縦（船舶）</option><option value="造形芸術）">造形芸術）</option><option value="大型ナイフ">大型ナイフ</option><option value="値切り">値切り</option><option value="地質学">地質学</option><option value="跳躍">跳躍</option><option value="追跡">追跡</option><option value="天文学">天文学</option><option value="伝承（都市伝説）">伝承（都市伝説）</option><option value="電気修理">電気修理</option><option value="電子工学">電子工学</option><option value="登攀">登攀</option><option value="投擲">投擲</option><option value="頭突き">頭突き</option><option value="動物使い">動物使い</option><option value="日本刀">日本刀</option><option value="忍び歩き">忍び歩き</option><option value="博物学">博物学</option><option value="物理学">物理学</option><option value="聞き耳">聞き耳</option><option value="変装">変装</option><option value="母国語（ラテン語）">母国語（ラテン語）</option><option value="母国語（英語）">母国語（英語）</option><option value="法律">法律</option><option value="本草学">本草学</option><option value="魅惑">魅惑</option><option value="夢の知識">夢の知識</option><option value="夢見">夢見</option><option value="目星">目星</option><option value="薬学">薬学</option><option value="歴史">歴史</option></select>
                     <select id="sortSelect" onchange="resetSkillSort(); renderAll();" class="bg-transparent text-xs font-black outline-none cursor-pointer dark:text-slate-300 force-dark-text ml-2 text-left" style="text-align: left;">
                         <option value="name" selected="">名前順</option>
                         <option value="newest">追加順 (新)</option>
@@ -8930,6 +8930,413 @@ HO異邦人　あなたは異なる国、文化で生きる者である。
                                 <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('36002b20-69db-48db-b544-1806b7c559d7', '組みつき')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
                                 <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('36002b20-69db-48db-b544-1806b7c559d7', '組みつき', -1)"><i class="fas fa-minus"></i></button>
                                 <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('36002b20-69db-48db-b544-1806b7c559d7', '組みつき', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="card has-long-name" style="border-color: rgb(99, 102, 241); --char-color: #6366f1; --char-text-color: #ffffff; --simple-name-scale: 0.8; --normal-name-scale: 0.9;">
+                        <div class="lost-watermark">LOST</div>
+                        
+                            <div class="card-controls admin-only persistent flex items-center gap-2" onclick="event.stopPropagation();">
+                                <!-- ▼ カラーピッカーとテキスト入力をセットにする ▼ -->
+                                <div class="flex items-center bg-slate-800/50 rounded-md border border-slate-700 overflow-hidden" onclick="event.stopPropagation();">
+                                    <input type="color" value="#6366f1" onchange="event.stopPropagation(); updateColor('68d32ef5-7034-4f96-ae20-ebb458938ea9', this.value); this.nextElementSibling.value = this.value.toUpperCase();" class="w-6 h-6 p-0 border-0 cursor-pointer bg-transparent" title="色変更">
+                                    <input type="text" value="#6366F1" onchange="event.stopPropagation(); let val = this.value.startsWith('#') ? this.value : '#' + this.value; this.previousElementSibling.value = val; updateColor('68d32ef5-7034-4f96-ae20-ebb458938ea9', val);" class="w-16 bg-transparent text-white text-[10px] font-mono px-1 py-1 outline-none text-center uppercase" maxlength="7" title="カラーコード入力">
+                                </div>
+                                <!-- ▲ ここまで ▲ -->
+                                <button onclick="event.stopPropagation(); toggleLost('68d32ef5-7034-4f96-ae20-ebb458938ea9')" class="icon-btn hover:text-rose-500" title="ロスト切り替え"><i class="fas fa-skull-crossbones pointer-events-none"></i></button>
+                                <button onclick="event.stopPropagation(); showRawModal('68d32ef5-7034-4f96-ae20-ebb458938ea9')" class="icon-btn hover:text-indigo-500" title="元データ"><i class="fas fa-file-alt pointer-events-none"></i></button>
+                                <button onclick="event.stopPropagation(); showConfirm('68d32ef5-7034-4f96-ae20-ebb458938ea9')" class="icon-btn hover:text-rose-600" title="削除"><i class="fas fa-trash-alt pointer-events-none"></i></button>
+                            </div>
+                        
+
+                        <!-- ▼ styleの重複を修正 ▼ -->
+                        <div class="header-section" style="background-color: #6366f1; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('68d32ef5-7034-4f96-ae20-ebb458938ea9')">
+                            <img src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='220' height='300' viewBox='0 0 220 300'%3e%3crect width='220' height='300' fill='%23f1f5f9'/%3e%3ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='24' fill='%23cbd5e1'%3eNO IMAGE%3c/text%3e%3c/svg%3e" class="image-preview" onclick="event.stopPropagation(); triggerImageUpload('68d32ef5-7034-4f96-ae20-ebb458938ea9')">
+                                      
+                            <div class="info-container">
+                                <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                                    <span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="yomi" data-bound="true">---</span>
+                                </div>
+                                <div class="char-name-wrapper">
+                                    <div class="char-name font-black leading-tight w-full text-center text-white" title="エマ＝ミュゼ 穂村" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                                        <span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="surname" data-bound="true">エマ<span class="equal-char">＝</span><br class="name-br">ミュゼ</span><span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="givenName" data-bound="true">穂村</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap gap-2 justify-center view-mode-list:justify-start focused-mode:justify-start tags-wrapper w-full overflow-hidden">
+                                    <div class="flex items-center gap-2 whitespace-nowrap overflow-hidden max-w-full justify-center">
+                                        <span class="px-3 py-1 edition-tag-6 rounded-lg font-black text-sm whitespace-nowrap flex-shrink-0" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">6版</span>
+                                        <span class="px-4 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-slate-600 dark:text-slate-300 font-bold text-lg text-theme-sub whitespace-nowrap overflow-hidden text-ellipsis force-dark-text" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                            <span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="age" data-bound="true">33</span>歳 / 
+                                            <span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="gender" data-bound="true">女性</span>
+                                        </span>
+                                    </div>
+                                    <span class="px-4 py-1 rounded-lg font-black text-lg job-tag w-full text-center truncate bg-white" style="color:#6366f1; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" title="芸術家（陶芸家/クトゥルフ2015参照）">
+                                        <span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="job" data-bound="true">芸術家（陶芸家/クトゥルフ2015参照）</span>
+                                    </span>
+                                </div>
+                                
+                                <!-- ▼ 行の最後に </div> を追加して閉じています ▼ -->
+                                <div class="mt-1 w-full text-xs font-bold flex items-center justify-center gap-1 whitespace-nowrap overflow-hidden" style="color: rgba(255,255,255,0.9); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                                    <span class="truncate" title="誕生日: 8月10日"><i class="fas fa-birthday-cake mr-0.5"></i><span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="birthday" data-bound="true">8月10日</span></span>
+                                    <span class="mx-0.5">|</span>
+                                    <span class="truncate" title="身長/体重: 161cm / 47kg"><i class="fas fa-ruler-vertical mr-0.5"></i><span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="height" data-bound="true">161</span>cm / <i class="fas fa-weight mr-0.5"></i><span class="editable-field" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="weight" data-bound="true">47</span>kg</span>
+                                </div>
+
+                                
+
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="detail-section" style="flex: 1; min-width: 0; overflow-x: auto;">
+                            <div class="mb-6">
+                                <span class="text-[9px] text-theme-muted font-black block mb-2 uppercase tracking-widest">代表シナリオ</span>
+                                <div class="p-4 rounded-xl italic text-sm font-bold text-theme-sub info-panel">
+                                    <span class="editable-field block w-full force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="scenario" data-bound="true">燃えゆく海馬</span>
+                                </div>
+                            </div>
+                            <div class="mb-8">
+                                <span class="text-[9px] text-theme-muted font-black block mb-2 uppercase tracking-widest">MEMO <i class="fas fa-sticky-note ml-1"></i></span>
+                                <div class="p-4 rounded-xl italic text-sm font-bold text-theme-sub info-panel">
+                                    <span class="editable-field block w-full force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="memo" data-bound="true">HO：芸術家</span>
+                                </div>
+                            </div>
+
+                            
+                        <div class="mb-8">
+                            <span class="text-[9px] text-rose-400 font-black block mb-2 uppercase tracking-widest">秘匿MEMO <i class="fas fa-lock ml-1"></i></span>
+                            <div class="relative rounded-xl overflow-hidden border border-rose-200 dark:border-rose-900/30">
+                                <div class="absolute inset-0 bg-slate-800/95 backdrop-blur-md flex items-center justify-center cursor-pointer z-10 transition-opacity duration-300" onclick="this.style.opacity='0'; setTimeout(() =&gt; this.style.display='none', 300);">
+                                    <span class="text-xs font-black text-white flex items-center gap-2"><i class="fas fa-eye-slash"></i> クリックして秘匿情報を表示</span>
+                                </div>
+                                <div class="p-4 italic text-sm font-bold text-rose-900 dark:text-rose-200 bg-rose-50 dark:bg-rose-950/20 min-h-[4rem]">
+                                    <span class="editable-field block w-full whitespace-pre-wrap" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="secretMemo" data-bound="true">（未記入）</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                            <div class="stat-main-grid">
+                                
+                            <div class="stat-box border-str">
+                                <span class="stat-label">STR</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="STR" data-bound="true">12</span>
+                                <span class="stat-sub-val">(60)</span>
+                            </div>
+                        
+                            <div class="stat-box border-con">
+                                <span class="stat-label">CON</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="CON" data-bound="true">12</span>
+                                <span class="stat-sub-val">(60)</span>
+                            </div>
+                        
+                            <div class="stat-box border-pow">
+                                <span class="stat-label">POW</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="POW" data-bound="true">13</span>
+                                <span class="stat-sub-val">(65)</span>
+                            </div>
+                        
+                            <div class="stat-box border-dex">
+                                <span class="stat-label">DEX</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="DEX" data-bound="true">15</span>
+                                <span class="stat-sub-val">(75)</span>
+                            </div>
+                        
+                            <div class="stat-box border-app">
+                                <span class="stat-label">APP</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="APP" data-bound="true">14</span>
+                                <span class="stat-sub-val">(70)</span>
+                            </div>
+                        
+                            <div class="stat-box border-siz">
+                                <span class="stat-label">SIZ</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="SIZ" data-bound="true">13</span>
+                                <span class="stat-sub-val">(65)</span>
+                            </div>
+                        
+                            <div class="stat-box border-int">
+                                <span class="stat-label">INT</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="INT" data-bound="true">13</span>
+                                <span class="stat-sub-val">(65)</span>
+                            </div>
+                        
+                            <div class="stat-box border-edu">
+                                <span class="stat-label">EDU</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="EDU" data-bound="true">18</span>
+                                <span class="stat-sub-val">(90)</span>
+                            </div>
+                        
+                            </div>
+                            <div class="stat-sub-grid mb-8">
+                                
+                            <div class="stat-box border-hp">
+                                <span class="stat-label">HP</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="HP" data-bound="true">13</span>
+                            </div>
+                        
+                            <div class="stat-box border-mp">
+                                <span class="stat-label">MP</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="MP" data-bound="true">13</span>
+                            </div>
+                        
+                            <div class="stat-box border-san">
+                                <span class="stat-label">SAN</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="SAN" data-bound="true">65</span>
+                            </div>
+                        
+                            <div class="stat-box border-luk">
+                                <span class="stat-label">幸運</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="68d32ef5-7034-4f96-ae20-ebb458938ea9" data-field="stats" data-key="LUK" data-bound="true">65</span>
+                            </div>
+                        
+                            </div>
+
+                            <div class="skill-section">
+                                <div class="flex justify-between items-end mb-3 border-b border-slate-100 dark:border-slate-800 pb-1">
+                                    <span class="text-[9px] text-theme-muted font-black uppercase tracking-widest">技能一覧 (クリックでソート)</span>
+                                </div>
+                                <div class="skill-list">
+                                    
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('言いくるめ')" title="言いくるめ">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('言いくるめ')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        言いくるめ
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">50%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '言いくるめ')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '言いくるめ', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '言いくるめ', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('聞き耳')" title="聞き耳">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('聞き耳')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        聞き耳
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">42%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '聞き耳')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '聞き耳', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '聞き耳', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('造形芸術）')" title="造形芸術）">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('造形芸術）')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        造形芸術）
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">80%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '造形芸術）')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '造形芸術）', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '造形芸術）', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('コンピューター')" title="コンピューター">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('コンピューター')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        コンピューター
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">30%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', 'コンピューター')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', 'コンピューター', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', 'コンピューター', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('写真術')" title="写真術">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('写真術')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        写真術
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">40%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '写真術')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '写真術', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '写真術', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('心理学')" title="心理学">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('心理学')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        心理学
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">55%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '心理学')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '心理学', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '心理学', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('製作（陶芸）')" title="製作（陶芸）">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('製作（陶芸）')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        製作（陶芸）
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">70%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '製作（陶芸）')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '製作（陶芸）', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '製作（陶芸）', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('精神分析')" title="精神分析">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('精神分析')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        精神分析
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">55%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '精神分析')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '精神分析', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '精神分析', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('図書館')" title="図書館">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('図書館')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        図書館
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">60%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '図書館')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '図書館', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '図書館', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('博物学')" title="博物学">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('博物学')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        博物学
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">25%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '博物学')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '博物学', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '博物学', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('ほかの言語（日本語）')" title="ほかの言語（日本語）">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('ほかの言語（日本語）')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        ほかの言語（日本語）
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">55%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', 'ほかの言語（日本語）')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', 'ほかの言語（日本語）', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', 'ほかの言語（日本語）', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('目星')" title="目星">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('目星')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        目星
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">66%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('68d32ef5-7034-4f96-ae20-ebb458938ea9', '目星')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '目星', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('68d32ef5-7034-4f96-ae20-ebb458938ea9', '目星', 1)"><i class="fas fa-plus"></i></button>
                             </div>
                         
                                 </div>
@@ -39805,6 +40212,433 @@ KP：Fel　PL1：ゴリダル　PL2：かふぇてら　PL3：あきづ
                                 </div>
                             </div>
                         </div>
+                    </div><div class="card  " style="border-color: rgb(99, 102, 241); --char-color: #6366f1; --char-text-color: #ffffff; --simple-name-scale: 0.85; --normal-name-scale: 1;">
+                        <div class="lost-watermark">LOST</div>
+                        
+                            <div class="card-controls admin-only persistent flex items-center gap-2" onclick="event.stopPropagation();">
+                                <!-- ▼ カラーピッカーとテキスト入力をセットにする ▼ -->
+                                <div class="flex items-center bg-slate-800/50 rounded-md border border-slate-700 overflow-hidden" onclick="event.stopPropagation();">
+                                    <input type="color" value="#6366f1" onchange="event.stopPropagation(); updateColor('52d16144-1f54-4432-91bc-91b7e2cdb6b3', this.value); this.nextElementSibling.value = this.value.toUpperCase();" class="w-6 h-6 p-0 border-0 cursor-pointer bg-transparent" title="色変更">
+                                    <input type="text" value="#6366F1" onchange="event.stopPropagation(); let val = this.value.startsWith('#') ? this.value : '#' + this.value; this.previousElementSibling.value = val; updateColor('52d16144-1f54-4432-91bc-91b7e2cdb6b3', val);" class="w-16 bg-transparent text-white text-[10px] font-mono px-1 py-1 outline-none text-center uppercase" maxlength="7" title="カラーコード入力">
+                                </div>
+                                <!-- ▲ ここまで ▲ -->
+                                <button onclick="event.stopPropagation(); toggleLost('52d16144-1f54-4432-91bc-91b7e2cdb6b3')" class="icon-btn hover:text-rose-500" title="ロスト切り替え"><i class="fas fa-skull-crossbones pointer-events-none"></i></button>
+                                <button onclick="event.stopPropagation(); showRawModal('52d16144-1f54-4432-91bc-91b7e2cdb6b3')" class="icon-btn hover:text-indigo-500" title="元データ"><i class="fas fa-file-alt pointer-events-none"></i></button>
+                                <button onclick="event.stopPropagation(); showConfirm('52d16144-1f54-4432-91bc-91b7e2cdb6b3')" class="icon-btn hover:text-rose-600" title="削除"><i class="fas fa-trash-alt pointer-events-none"></i></button>
+                            </div>
+                        
+
+                        <!-- ▼ styleの重複を修正 ▼ -->
+                        <div class="header-section" style="background-color: #6366f1; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('52d16144-1f54-4432-91bc-91b7e2cdb6b3')">
+                            <img src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='220' height='300' viewBox='0 0 220 300'%3e%3crect width='220' height='300' fill='%23f1f5f9'/%3e%3ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='24' fill='%23cbd5e1'%3eNO IMAGE%3c/text%3e%3c/svg%3e" class="image-preview" onclick="event.stopPropagation(); triggerImageUpload('52d16144-1f54-4432-91bc-91b7e2cdb6b3')">
+                                      
+                            <div class="info-container">
+                                <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                                    <span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="yomi" data-bound="true">むらくも　たつき</span>
+                                </div>
+                                <div class="char-name-wrapper">
+                                    <div class="char-name font-black leading-tight w-full text-center text-white" title="叢雲 龍希" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                                        <span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="surname" data-bound="true">叢雲</span><span class="inline-block w-1"></span><span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="givenName" data-bound="true">龍希</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap gap-2 justify-center view-mode-list:justify-start focused-mode:justify-start tags-wrapper w-full overflow-hidden">
+                                    <div class="flex items-center gap-2 whitespace-nowrap overflow-hidden max-w-full justify-center">
+                                        <span class="px-3 py-1 edition-tag-6 rounded-lg font-black text-sm whitespace-nowrap flex-shrink-0" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">6版</span>
+                                        <span class="px-4 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-slate-600 dark:text-slate-300 font-bold text-lg text-theme-sub whitespace-nowrap overflow-hidden text-ellipsis force-dark-text" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                            <span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="age" data-bound="true">25</span>歳 / 
+                                            <span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="gender" data-bound="true">女性</span>
+                                        </span>
+                                    </div>
+                                    <span class="px-4 py-1 rounded-lg font-black text-lg job-tag w-full text-center truncate bg-white" style="color:#6366f1; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" title="エージェント（白南風分隊/オリジナル職業）">
+                                        <span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="job" data-bound="true">エージェント（白南風分隊/オリジナル職業）</span>
+                                    </span>
+                                </div>
+                                
+                                <!-- ▼ 行の最後に </div> を追加して閉じています ▼ -->
+                                <div class="mt-1 w-full text-xs font-bold flex items-center justify-center gap-1 whitespace-nowrap overflow-hidden" style="color: rgba(255,255,255,0.9); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                                    <span class="truncate" title="誕生日: 2月2日"><i class="fas fa-birthday-cake mr-0.5"></i><span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="birthday" data-bound="true">2月2日</span></span>
+                                    <span class="mx-0.5">|</span>
+                                    <span class="truncate" title="身長/体重: 159cm / 52kg"><i class="fas fa-ruler-vertical mr-0.5"></i><span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="height" data-bound="true">159</span>cm / <i class="fas fa-weight mr-0.5"></i><span class="editable-field" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="weight" data-bound="true">52</span>kg</span>
+                                </div>
+
+                                
+
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="detail-section" style="flex: 1; min-width: 0; overflow-x: auto;">
+                            <div class="mb-6">
+                                <span class="text-[9px] text-theme-muted font-black block mb-2 uppercase tracking-widest">代表シナリオ</span>
+                                <div class="p-4 rounded-xl italic text-sm font-bold text-theme-sub info-panel">
+                                    <span class="editable-field block w-full force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="scenario" data-bound="true">この命が燃え尽き果てるまで</span>
+                                </div>
+                            </div>
+                            <div class="mb-8">
+                                <span class="text-[9px] text-theme-muted font-black block mb-2 uppercase tracking-widest">MEMO <i class="fas fa-sticky-note ml-1"></i></span>
+                                <div class="p-4 rounded-xl italic text-sm font-bold text-theme-sub info-panel">
+                                    <span class="editable-field block w-full force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="memo" data-bound="true">メモなし</span>
+                                </div>
+                            </div>
+
+                            
+                        <div class="mb-8">
+                            <span class="text-[9px] text-rose-400 font-black block mb-2 uppercase tracking-widest">秘匿MEMO <i class="fas fa-lock ml-1"></i></span>
+                            <div class="relative rounded-xl overflow-hidden border border-rose-200 dark:border-rose-900/30">
+                                <div class="absolute inset-0 bg-slate-800/95 backdrop-blur-md flex items-center justify-center cursor-pointer z-10 transition-opacity duration-300" onclick="this.style.opacity='0'; setTimeout(() =&gt; this.style.display='none', 300);">
+                                    <span class="text-xs font-black text-white flex items-center gap-2"><i class="fas fa-eye-slash"></i> クリックして秘匿情報を表示</span>
+                                </div>
+                                <div class="p-4 italic text-sm font-bold text-rose-900 dark:text-rose-200 bg-rose-50 dark:bg-rose-950/20 min-h-[4rem]">
+                                    <span class="editable-field block w-full whitespace-pre-wrap" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="secretMemo" data-bound="true">（未記入）</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                            <div class="stat-main-grid">
+                                
+                            <div class="stat-box border-str">
+                                <span class="stat-label">STR</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="STR" data-bound="true">18</span>
+                                <span class="stat-sub-val">(90)</span>
+                            </div>
+                        
+                            <div class="stat-box border-con">
+                                <span class="stat-label">CON</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="CON" data-bound="true">11</span>
+                                <span class="stat-sub-val">(55)</span>
+                            </div>
+                        
+                            <div class="stat-box border-pow">
+                                <span class="stat-label">POW</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="POW" data-bound="true">14</span>
+                                <span class="stat-sub-val">(70)</span>
+                            </div>
+                        
+                            <div class="stat-box border-dex">
+                                <span class="stat-label">DEX</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="DEX" data-bound="true">15</span>
+                                <span class="stat-sub-val">(75)</span>
+                            </div>
+                        
+                            <div class="stat-box border-app">
+                                <span class="stat-label">APP</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="APP" data-bound="true">13</span>
+                                <span class="stat-sub-val">(65)</span>
+                            </div>
+                        
+                            <div class="stat-box border-siz">
+                                <span class="stat-label">SIZ</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="SIZ" data-bound="true">12</span>
+                                <span class="stat-sub-val">(60)</span>
+                            </div>
+                        
+                            <div class="stat-box border-int">
+                                <span class="stat-label">INT</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="INT" data-bound="true">15</span>
+                                <span class="stat-sub-val">(75)</span>
+                            </div>
+                        
+                            <div class="stat-box border-edu">
+                                <span class="stat-label">EDU</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="EDU" data-bound="true">17</span>
+                                <span class="stat-sub-val">(85)</span>
+                            </div>
+                        
+                            </div>
+                            <div class="stat-sub-grid mb-8">
+                                
+                            <div class="stat-box border-hp">
+                                <span class="stat-label">HP</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="HP" data-bound="true">12</span>
+                            </div>
+                        
+                            <div class="stat-box border-mp">
+                                <span class="stat-label">MP</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="MP" data-bound="true">14</span>
+                            </div>
+                        
+                            <div class="stat-box border-san">
+                                <span class="stat-label">SAN</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="SAN" data-bound="true">70</span>
+                            </div>
+                        
+                            <div class="stat-box border-luk">
+                                <span class="stat-label">幸運</span>
+                                <span class="stat-val editable-field force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="stats" data-key="LUK" data-bound="true">70</span>
+                            </div>
+                        
+                            </div>
+
+                            <div class="skill-section">
+                                <div class="flex justify-between items-end mb-3 border-b border-slate-100 dark:border-slate-800 pb-1">
+                                    <span class="text-[9px] text-theme-muted font-black uppercase tracking-widest">技能一覧 (クリックでソート)</span>
+                                </div>
+                                <div class="skill-list">
+                                    
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('運転（自動車）')" title="運転（自動車）">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('運転（自動車）')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        運転（自動車）
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">65%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '運転（自動車）')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '運転（自動車）', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '運転（自動車）', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('応急手当')" title="応急手当">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('応急手当')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        応急手当
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">50%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '応急手当')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '応急手当', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '応急手当', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('回避')" title="回避">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('回避')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        回避
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">80%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '回避')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '回避', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '回避', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('聞き耳')" title="聞き耳">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('聞き耳')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        聞き耳
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">80%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '聞き耳')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '聞き耳', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '聞き耳', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('クトゥルフ神話')" title="クトゥルフ神話">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('クトゥルフ神話')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        クトゥルフ神話
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">20%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'クトゥルフ神話')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'クトゥルフ神話', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'クトゥルフ神話', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('跳躍')" title="跳躍">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('跳躍')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        跳躍
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">60%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '跳躍')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '跳躍', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '跳躍', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('図書館')" title="図書館">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('図書館')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        図書館
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">60%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '図書館')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '図書館', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '図書館', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('ナビゲート')" title="ナビゲート">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('ナビゲート')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        ナビゲート
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">70%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'ナビゲート')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'ナビゲート', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'ナビゲート', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('ほかの言語（英語）')" title="ほかの言語（英語）">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('ほかの言語（英語）')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        ほかの言語（英語）
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">17%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'ほかの言語（英語）')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'ほかの言語（英語）', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'ほかの言語（英語）', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('目星')" title="目星">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('目星')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        目星
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">40%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '目星')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '目星', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '目星', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('サバイバル（極地）')" title="サバイバル（極地）">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('サバイバル（極地）')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        サバイバル（極地）
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">65%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'サバイバル（極地）')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'サバイバル（極地）', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', 'サバイバル（極地）', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('拳銃')" title="拳銃">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('拳銃')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        拳銃
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">70%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '拳銃')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '拳銃', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '拳銃', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                            <div class="skill-item  " onclick="event.stopPropagation(); filterBySkill('大型ナイフ')" title="大型ナイフ">
+                                <div class="flex items-center gap-2 overflow-hidden flex-1">
+                                    <button class="text-xs text-slate-300 hover:text-indigo-500 shrink-0" onclick="event.stopPropagation(); filterBySkill('大型ナイフ')" title="この技能でソート"><i class="fas fa-sort"></i></button>
+                                    <span class="skill-name truncate dark:text-slate-300 force-dark-text">
+                                        
+                                        大型ナイフ
+                                    </span>
+                                </div>
+                                <div class="flex items-center shrink-0">
+                                    <span class="text-indigo-500 font-black mr-2">85%</span>
+                                    
+                            <div class="flex items-center gap-1.5 ml-2">
+                                <button class="text-[10px] text-slate-400 hover:text-rose-500 transition-colors" onclick="event.stopPropagation(); toggleSkillSecret('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '大型ナイフ')" title="ネタバレ防止(閲覧時非表示)"><i class="fas fa-eye"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '大型ナイフ', -1)"><i class="fas fa-minus"></i></button>
+                                <button class="text-[10px] text-slate-400 hover:text-indigo-500 transition-colors" onclick="event.stopPropagation(); adjustSkill('52d16144-1f54-4432-91bc-91b7e2cdb6b3', '大型ナイフ', 1)"><i class="fas fa-plus"></i></button>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        
+                                </div>
+                            </div>
+                        </div>
                     </div><div class="card  " style="border-color: rgb(223, 184, 207); --char-color: #dfb8cf; --char-text-color: #1e293b; --simple-name-scale: 1; --normal-name-scale: 1;">
                         <div class="lost-watermark">LOST</div>
                         
@@ -46647,7 +47481,7 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
                             <i class="fas fa-users absolute -right-4 -bottom-4 text-6xl opacity-20"></i>
                             <span class="text-[9px] font-black block mb-1 uppercase tracking-widest opacity-80">総登録数</span>
                             <div class="flex items-baseline gap-1">
-                                <span id="stat-total" class="text-4xl font-black">95</span>
+                                <span id="stat-total" class="text-4xl font-black">97</span>
                                 <span class="text-xs font-black">名</span>
                             </div>
                             <div class="text-right -mt-1">
@@ -46696,7 +47530,7 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
             
                 <div class="stat-item-pop">
                     <span class="text-[9px] font-black dark:text-slate-300 force-dark-text">女性</span>
-                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-pink-100 text-pink-600">32</span>
+                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-pink-100 text-pink-600">34</span>
                 </div>
             
                 <div class="stat-item-pop">
@@ -46713,7 +47547,7 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
                                 <div id="stat-versions" class="space-y-2">
                 <div class="stat-item-pop">
                     <span class="text-[9px] font-black dark:text-slate-300 force-dark-text">6版</span>
-                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-blue-100 text-blue-600">62</span>
+                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-blue-100 text-blue-600">64</span>
                 </div>
             
                 <div class="stat-item-pop">
@@ -46727,12 +47561,12 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
                                 <div id="stat-san" class="space-y-2">
                 <div class="stat-item-pop">
                     <span class="text-[9px] font-black dark:text-slate-300 force-dark-text">安定(70+)</span>
-                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-600">35</span>
+                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-600">36</span>
                 </div>
             
                 <div class="stat-item-pop">
                     <span class="text-[9px] font-black dark:text-slate-300 force-dark-text">注意(40-69)</span>
-                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">54</span>
+                    <span class="text-xs font-black px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">55</span>
                 </div>
             
                 <div class="stat-item-pop">
@@ -46747,31 +47581,31 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
                             <div id="stat-ages" class="space-y-2">
                 <div class="flex items-center gap-2 text-[9px] font-black dark:text-slate-300 force-dark-text">
                     <span class="w-8 shrink-0">10代</span>
-                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:20%"></div></div>
+                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:19.587628865979383%"></div></div>
                     <span class="w-4 text-right">19</span>
                 </div>
             
                 <div class="flex items-center gap-2 text-[9px] font-black dark:text-slate-300 force-dark-text">
                     <span class="w-8 shrink-0">20代</span>
-                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:46.31578947368421%"></div></div>
-                    <span class="w-4 text-right">44</span>
+                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:46.391752577319586%"></div></div>
+                    <span class="w-4 text-right">45</span>
                 </div>
             
                 <div class="flex items-center gap-2 text-[9px] font-black dark:text-slate-300 force-dark-text">
                     <span class="w-8 shrink-0">30代</span>
-                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:27.368421052631582%"></div></div>
-                    <span class="w-4 text-right">26</span>
+                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:27.835051546391753%"></div></div>
+                    <span class="w-4 text-right">27</span>
                 </div>
             
                 <div class="flex items-center gap-2 text-[9px] font-black dark:text-slate-300 force-dark-text">
                     <span class="w-8 shrink-0">40代+</span>
-                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:5.263157894736842%"></div></div>
+                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:5.154639175257731%"></div></div>
                     <span class="w-4 text-right">5</span>
                 </div>
             
                 <div class="flex items-center gap-2 text-[9px] font-black dark:text-slate-300 force-dark-text">
                     <span class="w-8 shrink-0">不明</span>
-                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:1.0526315789473684%"></div></div>
+                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:1.0309278350515463%"></div></div>
                     <span class="w-4 text-right">1</span>
                 </div>
             </div>
@@ -46792,7 +47626,7 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
                                 <div id="stat-height-summary" class="space-y-1">
                 <div class="flex justify-around text-[10px] font-bold text-slate-500 dark:text-slate-400 mt-1">
                     <span class="force-dark-text"><i class="fas fa-mars text-sky-500 mr-1"></i>Avg: 171.0cm</span>
-                    <span class="force-dark-text"><i class="fas fa-venus text-pink-500 mr-1"></i>Avg: 158.7cm</span>
+                    <span class="force-dark-text"><i class="fas fa-venus text-pink-500 mr-1"></i>Avg: 158.8cm</span>
                 </div>
             </div>
                             </div>
@@ -46806,7 +47640,7 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
                             </div>
                             <div onclick="showRankingModal('popular_skills')" class="p-3 rounded-xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md cursor-pointer transition-all group">
                                 <span class="stats-sub-header group-hover:text-indigo-500 transition-colors">人気技能 <i class="fas fa-external-link-alt ml-1 text-[10px] opacity-50"></i></span>
-                                <div id="stat-popular-skills-summary" class="space-y-1"><div class="text-xs font-bold text-slate-600 dark:text-slate-300 text-center mt-1 force-dark-text">心理学 (65名)</div></div>
+                                <div id="stat-popular-skills-summary" class="space-y-1"><div class="text-xs font-bold text-slate-600 dark:text-slate-300 text-center mt-1 force-dark-text">心理学 (66名)</div></div>
                             </div>
                             <div onclick="showRankingModal('veteran')" class="p-3 rounded-xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md cursor-pointer transition-all group">
                                 <span class="stats-sub-header group-hover:text-indigo-500 transition-colors">継続探索者 <i class="fas fa-external-link-alt ml-1 text-[10px] opacity-50"></i></span>
@@ -46834,7 +47668,7 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
             
                 <div onclick="filterByMonth(2)" class="p-3 text-center rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 flex flex-col items-center justify-center h-20 cursor-pointer hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition-colors">
                     <div class="text-xs text-slate-400 font-black mb-1">2月</div>
-                    <div class="text-2xl font-black text-indigo-500">4</div>
+                    <div class="text-2xl font-black text-indigo-500">5</div>
                 </div>
             
                 <div onclick="filterByMonth(3)" class="p-3 text-center rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 flex flex-col items-center justify-center h-20 cursor-pointer hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition-colors">
@@ -46864,7 +47698,7 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
             
                 <div onclick="filterByMonth(8)" class="p-3 text-center rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 flex flex-col items-center justify-center h-20 cursor-pointer hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition-colors">
                     <div class="text-xs text-slate-400 font-black mb-1">8月</div>
-                    <div class="text-2xl font-black text-indigo-500">9</div>
+                    <div class="text-2xl font-black text-indigo-500">10</div>
                 </div>
             
                 <div onclick="filterByMonth(9)" class="p-3 text-center rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 flex flex-col items-center justify-center h-20 cursor-pointer hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition-colors">
@@ -46906,7 +47740,7 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
         </div>
 
         <!-- ================= 卓報告ビュー ================= -->
-        <div id="sessionView" class="max-w-5xl mx-auto space-y-6">
+        <div id="sessionView" class="max-w-5xl mx-auto space-y-6 hidden">
             
             <!-- コントロールパネル -->
             <div class="bg-white dark:bg-slate-800 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
@@ -46981,13 +47815,13 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
             <!-- 報告リスト -->
             <div id="sessionList" class="space-y-3 pb-20">
                     <div class="mb-6">
-                        <div id="header-year-2026" class="session-year-header flex items-center justify-between bg-slate-100 dark:bg-slate-800 p-3 rounded-xl mb-3 cursor-pointer select-none transition-colors hover:bg-slate-200 dark:hover:bg-slate-700 session-collapsed" onclick="toggleSessionYear('2026')">
+                        <div id="header-year-2026" class="session-year-header flex items-center justify-between bg-slate-100 dark:bg-slate-800 p-3 rounded-xl mb-3 cursor-pointer select-none transition-colors hover:bg-slate-200 dark:hover:bg-slate-700" onclick="toggleSessionYear('2026')">
                             <h3 class="text-lg font-black text-slate-700 dark:text-slate-200 force-dark-text flex items-center gap-2">
                                 <i class="fas fa-calendar-alt text-indigo-500"></i> 2026年 <span class="text-xs bg-white dark:bg-slate-900 px-2 py-0.5 rounded-full text-slate-500 shadow-sm">75件</span>
                             </h3>
                             <i class="fas fa-chevron-up text-slate-400 transition-transform duration-300"></i>
                         </div>
-                        <div class="session-year-content space-y-3 hidden" id="content-year-2026">
+                        <div class="session-year-content space-y-3" id="content-year-2026">
                 
                     <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row gap-4 hover:border-slate-300 dark:hover:border-slate-500 transition-colors relative">
                         <button onclick="deleteSession('f66f0f57-fd3a-469c-a8e3-efa463148708')" class="absolute top-2 right-2 text-slate-300 hover:text-rose-500 admin-only"><i class="fas fa-trash"></i></button>
@@ -55480,10 +56314,10 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
     </div>
 
     <!-- Modals -->
-    <div id="confirmModal" class="modal-overlay" style="display: none;">
+    <div id="confirmModal" class="modal-overlay">
         <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl max-w-sm w-full text-center shadow-2xl modal-box modal-bg">
             <h3 class="text-lg font-black mb-2 text-theme-main modal-text">確認</h3>
-            <p id="confirmMessage" class="text-theme-sub text-xs mb-6 modal-text"><span class="font-bold text-indigo-500">ガブリエラ・エスペランサ・デル・サグラリオ (35)</span><br>は既に登録されています。<br>データを更新しますか？</p>
+            <p id="confirmMessage" class="text-theme-sub text-xs mb-6 modal-text"></p>
             <div id="confirmButtonsStandard" class="flex gap-2 w-full">
                 <button onclick="closeConfirm()" class="flex-1 py-3 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-black rounded-xl text-xs force-dark-text">キャンセル</button>
                 <button id="confirmExecBtn" class="flex-1 py-3 bg-rose-500 text-white font-black rounded-xl text-xs">実行</button>
