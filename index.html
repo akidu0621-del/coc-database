@@ -631,7 +631,9 @@
                 <button onclick="toggleDarkMode()" class="w-10 h-10 flex items-center justify-center rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
                     <i id="themeIcon" class="fas fa-sun text-yellow-400"></i>
                 </button>
-                <button id="backToListBtn" onclick="resetFocus()" class="px-6 py-2 bg-indigo-600 text-white rounded-xl font-black text-sm shadow-lg hover:bg-indigo-700 transition hidden"><i class="fas fa-arrow-left mr-2"></i> 一覧に戻る</button>
+                <button id="backToListBtn" onclick="resetFocus()" class="hidden px-6 py-2 bg-indigo-600 text-white rounded-xl font-black text-sm shadow-lg hover:bg-indigo-700 transition">
+                    <i class="fas fa-arrow-left mr-2"></i> 一覧に戻る
+                </button>
                 
                 <button id="btn-delete-all" onclick="showConfirm('all')" class="admin-only px-3 py-2 bg-rose-500 text-white rounded-xl font-black text-xs shadow-sm hover:bg-rose-600 transition" title="全探索者データを削除">
                     <i class="fas fa-trash-alt mr-1"></i>
@@ -778,7 +780,7 @@
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #7897ff; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('8ff1d3d4-4cf3-44dc-8415-b6587570d6f3')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%A2%E3%83%A4%E3%83%A1ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('8ff1d3d4-4cf3-44dc-8415-b6587570d6f3')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%A2%E3%83%A4%E3%83%A1ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('8ff1d3d4-4cf3-44dc-8415-b6587570d6f3')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('8ff1d3d4-4cf3-44dc-8415-b6587570d6f3')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -1287,7 +1289,7 @@
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #d21f0e; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('7fe963c3-f7c1-495b-b01e-881223de7c2f')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8B%E3%81%AE%E3%82%93ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('7fe963c3-f7c1-495b-b01e-881223de7c2f')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8B%E3%81%AE%E3%82%93ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('7fe963c3-f7c1-495b-b01e-881223de7c2f')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('7fe963c3-f7c1-495b-b01e-881223de7c2f')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -1807,7 +1809,7 @@ INT14以上でPC作成をしてください。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #b44050; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('fa530df1-f449-4b47-9f99-89a24b4e384e')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8F%E3%82%8C%E3%81%AAss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('fa530df1-f449-4b47-9f99-89a24b4e384e')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8F%E3%82%8C%E3%81%AAss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('fa530df1-f449-4b47-9f99-89a24b4e384e')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('fa530df1-f449-4b47-9f99-89a24b4e384e')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -2362,7 +2364,7 @@ https://iachara.com/view/11153791</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #696969; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('9037563c-f37a-4539-be0e-f046b2644386')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%97%E3%81%8Dss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('9037563c-f37a-4539-be0e-f046b2644386')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%97%E3%81%8Dss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('9037563c-f37a-4539-be0e-f046b2644386')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('9037563c-f37a-4539-be0e-f046b2644386')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -2860,7 +2862,7 @@ https://iachara.com/view/11153791</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #d6bdb5; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('9cfc0e77-ce01-4547-ad50-8878d5853c38')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%88%E3%81%84%E3%81%A1.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('9cfc0e77-ce01-4547-ad50-8878d5853c38')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%88%E3%81%84%E3%81%A1.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('9cfc0e77-ce01-4547-ad50-8878d5853c38')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('9cfc0e77-ce01-4547-ad50-8878d5853c38')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -3312,7 +3314,7 @@ NPC『嘉羽 羊介』とのコネクション。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #f27e62; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('201e55f9-3ab9-400e-a92a-362cd4759b1b')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%82%E3%81%91%E3%81%B3ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('201e55f9-3ab9-400e-a92a-362cd4759b1b')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%82%E3%81%91%E3%81%B3ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('201e55f9-3ab9-400e-a92a-362cd4759b1b')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('201e55f9-3ab9-400e-a92a-362cd4759b1b')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -3775,7 +3777,7 @@ NPC『嘉羽 羊介』とのコネクション。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #bbb8b2; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('00f56918-efc0-4b7a-beb1-926bb3e82d99')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BE%E3%81%A9%E3%81%8Bss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('00f56918-efc0-4b7a-beb1-926bb3e82d99')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BE%E3%81%A9%E3%81%8Bss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('00f56918-efc0-4b7a-beb1-926bb3e82d99')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('00f56918-efc0-4b7a-beb1-926bb3e82d99')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -4316,7 +4318,7 @@ SAN値回復+5
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #f6cfab; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('8fce4f61-6c51-4631-9060-3546711e9d15')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%95%E3%81%A8%E3%82%8Bss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('8fce4f61-6c51-4631-9060-3546711e9d15')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%95%E3%81%A8%E3%82%8Bss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('8fce4f61-6c51-4631-9060-3546711e9d15')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('8fce4f61-6c51-4631-9060-3546711e9d15')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -4853,7 +4855,7 @@ https://charaeno.com/6th/qdu-CpKWRLSQYIVdO5usO</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #bd8dfe; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('20aa5211-e0eb-401d-b2d5-c71c99be8234')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E9%83%A8%E9%95%B7ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('20aa5211-e0eb-401d-b2d5-c71c99be8234')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E9%83%A8%E9%95%B7ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('20aa5211-e0eb-401d-b2d5-c71c99be8234')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('20aa5211-e0eb-401d-b2d5-c71c99be8234')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -5327,7 +5329,7 @@ https://charaeno.com/6th/qdu-CpKWRLSQYIVdO5usO</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #fbe44c; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('25358f17-911a-45a9-94b1-177eaa638520')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%97%E3%81%90%E3%82%8Css.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('25358f17-911a-45a9-94b1-177eaa638520')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%97%E3%81%90%E3%82%8Css.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('25358f17-911a-45a9-94b1-177eaa638520')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('25358f17-911a-45a9-94b1-177eaa638520')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -5825,7 +5827,7 @@ HO1 高校生
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #2e3546; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('06d775e9-d348-4415-9d7e-0a2223fe6ad4')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8D%E3%81%8D%E3%82%87%E3%81%86.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('06d775e9-d348-4415-9d7e-0a2223fe6ad4')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8D%E3%81%8D%E3%82%87%E3%81%86.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('06d775e9-d348-4415-9d7e-0a2223fe6ad4')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('06d775e9-d348-4415-9d7e-0a2223fe6ad4')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -6489,7 +6491,7 @@ HO1 高校生
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #0b6c82; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('e947b8b5-a065-4b8d-b50d-605c329ee98c')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%95%E3%82%88%E3%82%8A.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('e947b8b5-a065-4b8d-b50d-605c329ee98c')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%95%E3%82%88%E3%82%8A.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('e947b8b5-a065-4b8d-b50d-605c329ee98c')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('e947b8b5-a065-4b8d-b50d-605c329ee98c')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -6990,7 +6992,7 @@ HO1 高校生
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #f21323; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('e53a9f5c-cc7d-44d5-8443-430d2bf74e22')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%A8%E3%81%8D%E3%82%84ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('e53a9f5c-cc7d-44d5-8443-430d2bf74e22')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%A8%E3%81%8D%E3%82%84ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('e53a9f5c-cc7d-44d5-8443-430d2bf74e22')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('e53a9f5c-cc7d-44d5-8443-430d2bf74e22')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -7467,7 +7469,7 @@ GM:Fel　PL1:イツキ　PL2:あきづ
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #8b8575; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('31bc93cc-03e6-4394-b71e-c027d0ce510a')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%A1%E3%81%BE%E3%81%8D.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('31bc93cc-03e6-4394-b71e-c027d0ce510a')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%A1%E3%81%BE%E3%81%8D.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('31bc93cc-03e6-4394-b71e-c027d0ce510a')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('31bc93cc-03e6-4394-b71e-c027d0ce510a')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -8045,7 +8047,7 @@ GM:Fel　PL1:イツキ　PL2:あきづ
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #95ddff; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('aa47f526-d656-4f44-8e88-914eb22bb5d9')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%92%E3%83%AB%E3%83%9Ess.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('aa47f526-d656-4f44-8e88-914eb22bb5d9')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%92%E3%83%AB%E3%83%9Ess.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('aa47f526-d656-4f44-8e88-914eb22bb5d9')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('aa47f526-d656-4f44-8e88-914eb22bb5d9')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -8601,7 +8603,7 @@ KP：ミナト　PL1：ゴリダル　PL2：いちゃ　PL3：かふぇてら　
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ffd667; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('6cda6939-de58-48c1-b714-3f86525086ce')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%B4%E3%82%A3%E3%82%AF%E3%83%88%E3%83%ABss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('6cda6939-de58-48c1-b714-3f86525086ce')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%B4%E3%82%A3%E3%82%AF%E3%83%88%E3%83%ABss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('6cda6939-de58-48c1-b714-3f86525086ce')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('6cda6939-de58-48c1-b714-3f86525086ce')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -9192,7 +9194,7 @@ Take off those old clothes already!（さっさとその古い服を脱ぎ捨て
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #f5a6ae; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('d6225557-c49a-4a3b-8595-8b5e312daf10')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%9B%E3%82%93%E3%82%8Ass.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('d6225557-c49a-4a3b-8595-8b5e312daf10')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%9B%E3%82%93%E3%82%8Ass.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('d6225557-c49a-4a3b-8595-8b5e312daf10')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('d6225557-c49a-4a3b-8595-8b5e312daf10')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -9738,7 +9740,7 @@ HO:刑事
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #cecece; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('36002b20-69db-48db-b544-1806b7c559d7')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%A8%E3%83%8D%E3%83%9A%E3%82%A4.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('36002b20-69db-48db-b544-1806b7c559d7')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%A8%E3%83%8D%E3%83%9A%E3%82%A4.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('36002b20-69db-48db-b544-1806b7c559d7')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('36002b20-69db-48db-b544-1806b7c559d7')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -10253,7 +10255,7 @@ HO異邦人　あなたは異なる国、文化で生きる者である。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #dc7269; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('68d32ef5-7034-4f96-ae20-ebb458938ea9')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%A8%E3%83%9Ess.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('68d32ef5-7034-4f96-ae20-ebb458938ea9')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%A8%E3%83%9Ess.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('68d32ef5-7034-4f96-ae20-ebb458938ea9')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('68d32ef5-7034-4f96-ae20-ebb458938ea9')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -10706,7 +10708,7 @@ HO異邦人　あなたは異なる国、文化で生きる者である。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #c75cb3; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('ea21796d-80d6-47db-ba1f-20511d17c3a7')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%A8%E3%83%AA%E3%82%ABss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('ea21796d-80d6-47db-ba1f-20511d17c3a7')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%A8%E3%83%AA%E3%82%ABss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('ea21796d-80d6-47db-ba1f-20511d17c3a7')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('ea21796d-80d6-47db-ba1f-20511d17c3a7')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -11306,7 +11308,7 @@ Hex（めろむら）</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #999285; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('c0cc4eba-318c-4cf0-add4-a7f4eedb2919')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8B%E3%81%9A%E3%81%A8.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('c0cc4eba-318c-4cf0-add4-a7f4eedb2919')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8B%E3%81%9A%E3%81%A8.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('c0cc4eba-318c-4cf0-add4-a7f4eedb2919')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('c0cc4eba-318c-4cf0-add4-a7f4eedb2919')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -11780,7 +11782,7 @@ KP：ミナト　PL1：あきづ　PL2：ひなた
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ffbc7e; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('ce089c9b-def1-4638-b9b0-525b3f67bfca')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E5%A4%A7%E8%86%B3%E5%8D%83%E9%B3%A5ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('ce089c9b-def1-4638-b9b0-525b3f67bfca')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E5%A4%A7%E8%86%B3%E5%8D%83%E9%B3%A5ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('ce089c9b-def1-4638-b9b0-525b3f67bfca')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('ce089c9b-def1-4638-b9b0-525b3f67bfca')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -12359,7 +12361,7 @@ KP：ミナト　PL1：あきづ　PL2：ひなた
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #23336e; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('cd300fd2-0053-4144-a0a9-7ec18536c39a')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%93%E3%81%86%E3%81%8Dss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('cd300fd2-0053-4144-a0a9-7ec18536c39a')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%93%E3%81%86%E3%81%8Dss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('cd300fd2-0053-4144-a0a9-7ec18536c39a')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('cd300fd2-0053-4144-a0a9-7ec18536c39a')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -12923,7 +12925,7 @@ CoC_「雪の降る夜に」フラグ回収
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ff6e22; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('0f0d996a-7567-4717-a08e-8d71307d5070')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%9F%E3%81%BE%E3%81%AE%E3%81%88%E3%82%82%E3%82%93.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('0f0d996a-7567-4717-a08e-8d71307d5070')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%9F%E3%81%BE%E3%81%AE%E3%81%88%E3%82%82%E3%82%93.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('0f0d996a-7567-4717-a08e-8d71307d5070')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('0f0d996a-7567-4717-a08e-8d71307d5070')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -13362,7 +13364,7 @@ CoC_「雪の降る夜に」フラグ回収
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #6f6764; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('4bdd73aa-6a03-4090-8704-7369344e4fa9')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%86%E3%81%8D%E3%81%8A.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('4bdd73aa-6a03-4090-8704-7369344e4fa9')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%86%E3%81%8D%E3%81%8A.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('4bdd73aa-6a03-4090-8704-7369344e4fa9')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('4bdd73aa-6a03-4090-8704-7369344e4fa9')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -13835,7 +13837,7 @@ CoC_「雪の降る夜に」フラグ回収
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #1db85e; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('5496fa61-c1cf-4048-8477-d86f8ef6d19d')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%84%E3%81%8F%E3%82%82ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('5496fa61-c1cf-4048-8477-d86f8ef6d19d')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%84%E3%81%8F%E3%82%82ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('5496fa61-c1cf-4048-8477-d86f8ef6d19d')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('5496fa61-c1cf-4048-8477-d86f8ef6d19d')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -14311,7 +14313,7 @@ CoC_「雪の降る夜に」フラグ回収
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ee6d79; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('0251f292-f2bf-4c27-84bf-3dfa11365cf5')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%A6%E3%81%A3%E3%81%8Bss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('0251f292-f2bf-4c27-84bf-3dfa11365cf5')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%A6%E3%81%A3%E3%81%8Bss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('0251f292-f2bf-4c27-84bf-3dfa11365cf5')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('0251f292-f2bf-4c27-84bf-3dfa11365cf5')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -14826,7 +14828,7 @@ CoC_「雪の降る夜に」フラグ回収
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #a5aaad; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('41368420-1fed-48fa-bcc6-3bb652f884d2')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BF%E3%81%A9%E3%82%8A.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('41368420-1fed-48fa-bcc6-3bb652f884d2')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BF%E3%81%A9%E3%82%8A.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('41368420-1fed-48fa-bcc6-3bb652f884d2')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('41368420-1fed-48fa-bcc6-3bb652f884d2')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -15328,7 +15330,7 @@ CoC_「雪の降る夜に」フラグ回収
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #3867a4; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('05268334-2208-4aad-acf6-ae07e3794388')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%AA%E3%82%8B%E3%81%8D.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('05268334-2208-4aad-acf6-ae07e3794388')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%AA%E3%82%8B%E3%81%8D.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('05268334-2208-4aad-acf6-ae07e3794388')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('05268334-2208-4aad-acf6-ae07e3794388')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -15845,7 +15847,7 @@ KP：ミナト　PL1：あきづ　PL2：ひなた
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #363596; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('6daf51e0-b171-4f31-a8ce-cbe62773a2cd')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%AC%E3%83%93%E3%82%A3ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('6daf51e0-b171-4f31-a8ce-cbe62773a2cd')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%AC%E3%83%93%E3%82%A3ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('6daf51e0-b171-4f31-a8ce-cbe62773a2cd')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('6daf51e0-b171-4f31-a8ce-cbe62773a2cd')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -16440,7 +16442,7 @@ KP：ミナト　PL1：あきづ　PL2：ひなた
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #df9e80; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('54f211e0-cd09-4c42-8b20-13027c5589ca')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%B2%E3%81%AA.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('54f211e0-cd09-4c42-8b20-13027c5589ca')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B2%E3%81%AA.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('54f211e0-cd09-4c42-8b20-13027c5589ca')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('54f211e0-cd09-4c42-8b20-13027c5589ca')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -16986,7 +16988,7 @@ KP：ミナト　PL1：あきづ　PL2：ひなた
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #e6dade; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('b3686652-3299-4b79-80ee-63d8e4fecb99')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8B%E3%82%93%E3%81%AAss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('b3686652-3299-4b79-80ee-63d8e4fecb99')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8B%E3%82%93%E3%81%AAss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('b3686652-3299-4b79-80ee-63d8e4fecb99')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('b3686652-3299-4b79-80ee-63d8e4fecb99')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -17534,7 +17536,7 @@ HO2――彼女は、月灘を殺し心臓をくりぬいた鳥だ。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #906538; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('7a7db681-1ab0-46a2-b73c-cab65d6888ac')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%95%E3%81%A4%E3%81%8Dss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('7a7db681-1ab0-46a2-b73c-cab65d6888ac')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%95%E3%81%A4%E3%81%8Dss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('7a7db681-1ab0-46a2-b73c-cab65d6888ac')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('7a7db681-1ab0-46a2-b73c-cab65d6888ac')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -18157,7 +18159,7 @@ HO2――彼女は、月灘を殺し心臓をくりぬいた鳥だ。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #888171; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('26883c38-7bec-4594-9bfc-b3931bf0a234')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%82%E3%81%BE%E3%81%AD.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('26883c38-7bec-4594-9bfc-b3931bf0a234')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%82%E3%81%BE%E3%81%AD.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('26883c38-7bec-4594-9bfc-b3931bf0a234')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('26883c38-7bec-4594-9bfc-b3931bf0a234')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -18694,7 +18696,7 @@ HO2――彼女は、月灘を殺し心臓をくりぬいた鳥だ。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #56d2bd; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('9cebdc8a-005e-4d0d-970b-fdc96206fcaa')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%82%E3%81%95%E3%81%B2ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('9cebdc8a-005e-4d0d-970b-fdc96206fcaa')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%82%E3%81%95%E3%81%B2ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('9cebdc8a-005e-4d0d-970b-fdc96206fcaa')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('9cebdc8a-005e-4d0d-970b-fdc96206fcaa')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -19174,7 +19176,7 @@ AF【マリの指輪】
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ffa671; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('856d6619-69fb-461a-86e3-1efe075b5ed3')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8D%E3%81%97%E3%81%8F%E3%82%93ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('856d6619-69fb-461a-86e3-1efe075b5ed3')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8D%E3%81%97%E3%81%8F%E3%82%93ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('856d6619-69fb-461a-86e3-1efe075b5ed3')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('856d6619-69fb-461a-86e3-1efe075b5ed3')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -19761,7 +19763,7 @@ PC2が死んでいることは誰の目にも明らかで――
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #b1696b; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('2aa27fc2-fd9e-4c0e-8363-54c83572df57')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%A2%E3%83%A4%E3%83%A1.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('2aa27fc2-fd9e-4c0e-8363-54c83572df57')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%A2%E3%83%A4%E3%83%A1.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('2aa27fc2-fd9e-4c0e-8363-54c83572df57')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('2aa27fc2-fd9e-4c0e-8363-54c83572df57')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -20353,7 +20355,7 @@ KP:七葉　PL1:イツキ　PL2:めろむら　PL3:いぶし銀　PL4:あきづ�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #c7afad; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('508ac3d1-eb5f-4ee7-b36b-9204fc94542a')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BE%E3%82%82%E3%82%8Bss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('508ac3d1-eb5f-4ee7-b36b-9204fc94542a')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BE%E3%82%82%E3%82%8Bss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('508ac3d1-eb5f-4ee7-b36b-9204fc94542a')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('508ac3d1-eb5f-4ee7-b36b-9204fc94542a')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -20916,7 +20918,7 @@ EDU成長判定+10　運転40→60
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #996f9b; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('0cb257fb-8565-4bd7-b654-77b05b34a541')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%82%E3%81%BE%E3%81%ADss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('0cb257fb-8565-4bd7-b654-77b05b34a541')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%82%E3%81%BE%E3%81%ADss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('0cb257fb-8565-4bd7-b654-77b05b34a541')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('0cb257fb-8565-4bd7-b654-77b05b34a541')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -21467,7 +21469,7 @@ STR、CON、DEX を 2d6+6 で決定し、そのうちひとつを 18 にする�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #879ab9; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('522f0259-d2b7-4ed4-83d8-9308a05ba603')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%B2%E3%81%B0%E3%82%8Ass.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('522f0259-d2b7-4ed4-83d8-9308a05ba603')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B2%E3%81%B0%E3%82%8Ass.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('522f0259-d2b7-4ed4-83d8-9308a05ba603')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('522f0259-d2b7-4ed4-83d8-9308a05ba603')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -22037,7 +22039,7 @@ STR、CON、DEX を 2d6+6 で決定し、そのうちひとつを 18 にする�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #646c78; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('3ec1a96b-a8bf-4930-a8ec-af5ab7d74a5d')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%A0%E3%82%8B%E3%81%BE.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('3ec1a96b-a8bf-4930-a8ec-af5ab7d74a5d')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%A0%E3%82%8B%E3%81%BE.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('3ec1a96b-a8bf-4930-a8ec-af5ab7d74a5d')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('3ec1a96b-a8bf-4930-a8ec-af5ab7d74a5d')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -22469,7 +22471,7 @@ STR、CON、DEX を 2d6+6 で決定し、そのうちひとつを 18 にする�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #c6542f; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('235233f8-6920-4570-a4cf-3dd3b948900c')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%9F%E3%81%91%E3%82%8B.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('235233f8-6920-4570-a4cf-3dd3b948900c')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%9F%E3%81%91%E3%82%8B.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('235233f8-6920-4570-a4cf-3dd3b948900c')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('235233f8-6920-4570-a4cf-3dd3b948900c')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -23096,7 +23098,7 @@ DOGSのために生き、DOGSのために死ぬ。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #803b42; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('1e95bcdf-9d18-4590-8d7e-fbe694743ce0')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%B7%E3%83%A3%E3%82%AA%E3%83%9B%E3%83%B3ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('1e95bcdf-9d18-4590-8d7e-fbe694743ce0')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%B7%E3%83%A3%E3%82%AA%E3%83%9B%E3%83%B3ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('1e95bcdf-9d18-4590-8d7e-fbe694743ce0')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('1e95bcdf-9d18-4590-8d7e-fbe694743ce0')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -23609,7 +23611,7 @@ HO2 貴方は「破戒と堕落の異教【真言立川流】」から依頼を�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #272727; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('99d4fcf6-7b9a-409d-8453-972927d518d0')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BC%E3%81%9F%E3%82%93.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('99d4fcf6-7b9a-409d-8453-972927d518d0')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BC%E3%81%9F%E3%82%93.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('99d4fcf6-7b9a-409d-8453-972927d518d0')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('99d4fcf6-7b9a-409d-8453-972927d518d0')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -24320,7 +24322,7 @@ HO2 貴方は「破戒と堕落の異教【真言立川流】」から依頼を�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #99daf8; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('5c60a067-4289-41e7-b1e9-560affec5822')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%A4%E3%81%8B%E3%81%95.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('5c60a067-4289-41e7-b1e9-560affec5822')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%A4%E3%81%8B%E3%81%95.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('5c60a067-4289-41e7-b1e9-560affec5822')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('5c60a067-4289-41e7-b1e9-560affec5822')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -24797,7 +24799,7 @@ HO2 貴方は「破戒と堕落の異教【真言立川流】」から依頼を�
                         </div>
 
                             <div class="hidden lg:flex relative flex-shrink-0 group overflow-hidden" style="width: 280px; background-color: #99daf8; border-radius: 0 1.5rem 1.5rem 0; transform: translateZ(0); box-shadow: 0 0 0 1px#99daf8;">
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/%E9%9C%9C%E6%9C%88%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4sss.jpg?raw=true" class="w-full h-full object-cover absolute inset-0 z-0" alt="ディスプレイ画像">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/%E9%9C%9C%E6%9C%88%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4sss.jpg" loading="lazy" onerror="retryLoadImage(this)" class="w-full h-full object-cover absolute inset-0 z-0" alt="ディスプレイ画像">
                             <!-- ホバー時のオーバーレイ -->
                             <div class="admin-only absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 z-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer" onclick="event.stopPropagation(); setDisplayImage('5c60a067-4289-41e7-b1e9-560affec5822')">
                                 <span class="px-4 py-2 bg-white/20 backdrop-blur-md text-white rounded-xl font-bold text-xs shadow-lg border border-white/30">
@@ -24824,7 +24826,7 @@ HO2 貴方は「破戒と堕落の異教【真言立川流】」から依頼を�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #c59568; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('247f97e0-9675-4d17-a62c-4889da9acb5f')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8B%E3%83%BC.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('247f97e0-9675-4d17-a62c-4889da9acb5f')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%B8%E3%83%A3%E3%83%BC%E3%83%8B%E3%83%BC.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('247f97e0-9675-4d17-a62c-4889da9acb5f')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('247f97e0-9675-4d17-a62c-4889da9acb5f')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -25389,7 +25391,7 @@ HO2 貴方は「破戒と堕落の異教【真言立川流】」から依頼を�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #cda784; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('a8237801-d7a7-4764-9f02-12766182b865')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8A%E3%81%95%E3%82%80.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('a8237801-d7a7-4764-9f02-12766182b865')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8A%E3%81%95%E3%82%80.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('a8237801-d7a7-4764-9f02-12766182b865')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('a8237801-d7a7-4764-9f02-12766182b865')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -25865,7 +25867,7 @@ GM:イツキ　PL1:あきづ　PL2:めろむら　PL3:いぶし銀　PL4:Fel
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #de4c4f; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('dd8b7320-4cd7-4bf4-9740-2fbafbc99787')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8A%E3%81%BF%E3%81%8F%E3%82%93.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('dd8b7320-4cd7-4bf4-9740-2fbafbc99787')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8A%E3%81%BF%E3%81%8F%E3%82%93.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('dd8b7320-4cd7-4bf4-9740-2fbafbc99787')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('dd8b7320-4cd7-4bf4-9740-2fbafbc99787')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -26497,7 +26499,7 @@ HO1の正体は鬼を生み出した畏怒羅の末裔だ。陰陽術を使用�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ea6399; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('03b56e40-3f9c-4eb8-80db-fd37999c4aa8')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%8C%E3%82%93%E3%81%92ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('03b56e40-3f9c-4eb8-80db-fd37999c4aa8')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%8C%E3%82%93%E3%81%92ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('03b56e40-3f9c-4eb8-80db-fd37999c4aa8')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('03b56e40-3f9c-4eb8-80db-fd37999c4aa8')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -26932,7 +26934,7 @@ SAN値が0になれば双方の人格が消滅し、ロスト。</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #8b8285; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('95208efe-f366-4e96-a53c-d54a670c49c3')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%B7%E3%83%AB%E3%82%AD%E3%83%BCss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('95208efe-f366-4e96-a53c-d54a670c49c3')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%B7%E3%83%AB%E3%82%AD%E3%83%BCss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('95208efe-f366-4e96-a53c-d54a670c49c3')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('95208efe-f366-4e96-a53c-d54a670c49c3')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -27421,7 +27423,7 @@ SAN値が0になれば双方の人格が消滅し、ロスト。</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #85c59d; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('de178660-8ca3-4c3d-910f-469717f1a0f3')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%97%E3%82%93%E3%82%89ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('de178660-8ca3-4c3d-910f-469717f1a0f3')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%97%E3%82%93%E3%82%89ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('de178660-8ca3-4c3d-910f-469717f1a0f3')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('de178660-8ca3-4c3d-910f-469717f1a0f3')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -28181,7 +28183,7 @@ SAN値が0になれば双方の人格が消滅し、ロスト。</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #996bc5; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('d5392183-7b63-4065-9d2e-de26a64f6774')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%BB%E3%83%84%E3%83%8Ass.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('d5392183-7b63-4065-9d2e-de26a64f6774')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%BB%E3%83%84%E3%83%8Ass.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('d5392183-7b63-4065-9d2e-de26a64f6774')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('d5392183-7b63-4065-9d2e-de26a64f6774')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -28789,7 +28791,7 @@ https://iachara.com/view/12027923
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #9c7f66; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('66c171a0-48d4-4998-a345-b2fe53b08686')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%B7%E3%83%A5%E3%82%A6%E3%83%88ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('66c171a0-48d4-4998-a345-b2fe53b08686')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%B7%E3%83%A5%E3%82%A6%E3%83%88ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('66c171a0-48d4-4998-a345-b2fe53b08686')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('66c171a0-48d4-4998-a345-b2fe53b08686')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -29299,7 +29301,7 @@ KP：かなたす　PL1：あきづ　PL2：ひなた
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #fdaece; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('b1ce3a16-c6de-4adb-a707-2fb4663c9c14')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%BF%E3%82%AAss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('b1ce3a16-c6de-4adb-a707-2fb4663c9c14')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%BF%E3%82%AAss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('b1ce3a16-c6de-4adb-a707-2fb4663c9c14')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('b1ce3a16-c6de-4adb-a707-2fb4663c9c14')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -29798,7 +29800,7 @@ KP：かなたす　PL1：あきづ　PL2：ひなた
                         </div>
 
                             <div class="hidden lg:flex relative flex-shrink-0 group overflow-hidden" style="width: 280px; background-color: #fdaece; border-radius: 0 1.5rem 1.5rem 0; transform: translateZ(0); box-shadow: 0 0 0 1px#fdaece;">
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/%E6%A1%83%E8%8A%B1%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4ss.jpg?raw=true" class="w-full h-full object-cover absolute inset-0 z-0" alt="ディスプレイ画像">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/%E6%A1%83%E8%8A%B1%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4ss.jpg" loading="lazy" onerror="retryLoadImage(this)" class="w-full h-full object-cover absolute inset-0 z-0" alt="ディスプレイ画像">
                             <!-- ホバー時のオーバーレイ -->
                             <div class="admin-only absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 z-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer" onclick="event.stopPropagation(); setDisplayImage('b1ce3a16-c6de-4adb-a707-2fb4663c9c14')">
                                 <span class="px-4 py-2 bg-white/20 backdrop-blur-md text-white rounded-xl font-bold text-xs shadow-lg border border-white/30">
@@ -29825,7 +29827,7 @@ KP：かなたす　PL1：あきづ　PL2：ひなた
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #e26175; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('69ceb240-1cec-49f5-9747-7bb0e48075cd')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%86%E3%81%86%E3%81%9Fss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('69ceb240-1cec-49f5-9747-7bb0e48075cd')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%86%E3%81%86%E3%81%9Fss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('69ceb240-1cec-49f5-9747-7bb0e48075cd')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('69ceb240-1cec-49f5-9747-7bb0e48075cd')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -30365,7 +30367,7 @@ POW-15、幸運-16
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #6b6b6d; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('f908a538-1cf7-4984-a6f3-05954aab3504')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%82%E3%82%82.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('f908a538-1cf7-4984-a6f3-05954aab3504')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%82%E3%82%82.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('f908a538-1cf7-4984-a6f3-05954aab3504')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('f908a538-1cf7-4984-a6f3-05954aab3504')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -30842,7 +30844,7 @@ POW-15、幸運-16
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #e4b6cd; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('2e65b784-8c70-490e-ba86-4c013ba023e7')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%A6%E3%82%93%E3%81%BEss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('2e65b784-8c70-490e-ba86-4c013ba023e7')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%A6%E3%82%93%E3%81%BEss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('2e65b784-8c70-490e-ba86-4c013ba023e7')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('2e65b784-8c70-490e-ba86-4c013ba023e7')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -31365,7 +31367,7 @@ SAN値回復+19
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #fd973b; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('68d9392c-fa16-45df-be01-311711ca2784')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%B2%E3%81%A5%E3%81%8Dss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('68d9392c-fa16-45df-be01-311711ca2784')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B2%E3%81%A5%E3%81%8Dss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('68d9392c-fa16-45df-be01-311711ca2784')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('68d9392c-fa16-45df-be01-311711ca2784')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -31822,7 +31824,7 @@ SAN値回復+19
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #97e3f8; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('13d56676-3848-40ed-83e1-3ade0a1cf874')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%8A%E3%82%A4%E3%83%B3ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('13d56676-3848-40ed-83e1-3ade0a1cf874')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%8A%E3%82%A4%E3%83%B3ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('13d56676-3848-40ed-83e1-3ade0a1cf874')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('13d56676-3848-40ed-83e1-3ade0a1cf874')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -32354,7 +32356,7 @@ HO1専用 事前情報 （秘匿HO）
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #f5cf9f; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('b1b0f9cb-f2c7-45d5-8809-826ef357fbf2')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%AD%E3%81%93%E3%81%93ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('b1b0f9cb-f2c7-45d5-8809-826ef357fbf2')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%AD%E3%81%93%E3%81%93ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('b1b0f9cb-f2c7-45d5-8809-826ef357fbf2')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('b1b0f9cb-f2c7-45d5-8809-826ef357fbf2')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -32876,7 +32878,7 @@ HO1専用 事前情報 （秘匿HO）
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #1ca6d9; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('883f7433-0c4d-4a04-80af-9fd568112968')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8F%E3%82%89%E3%81%92ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('883f7433-0c4d-4a04-80af-9fd568112968')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8F%E3%82%89%E3%81%92ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('883f7433-0c4d-4a04-80af-9fd568112968')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('883f7433-0c4d-4a04-80af-9fd568112968')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -33391,7 +33393,7 @@ HO2
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #a76453; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('9b42088c-32c5-46c1-bcab-7738de6e631e')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%97%E3%82%89%E3%81%9Bss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('9b42088c-32c5-46c1-bcab-7738de6e631e')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%97%E3%82%89%E3%81%9Bss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('9b42088c-32c5-46c1-bcab-7738de6e631e')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('9b42088c-32c5-46c1-bcab-7738de6e631e')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -33918,7 +33920,7 @@ SAN値回復+29
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #cdb656; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('3894dbbb-8d47-48ae-8ad9-095ac786a092')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%8B%E3%82%B3%E3%83%A9%E3%82%B9.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('3894dbbb-8d47-48ae-8ad9-095ac786a092')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%8B%E3%82%B3%E3%83%A9%E3%82%B9.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('3894dbbb-8d47-48ae-8ad9-095ac786a092')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('3894dbbb-8d47-48ae-8ad9-095ac786a092')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -34429,7 +34431,7 @@ SAN値回復+29
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #9da5b8; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('c536f508-3994-4164-93c0-a62235ddf568')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%B2%E3%81%A8%E3%81%BFss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('c536f508-3994-4164-93c0-a62235ddf568')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B2%E3%81%A8%E3%81%BFss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('c536f508-3994-4164-93c0-a62235ddf568')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('c536f508-3994-4164-93c0-a62235ddf568')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -35047,7 +35049,7 @@ KP：かなたす　PL1：めろむら　PL2：ひなた　PL3：ゴリダル　
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ffa40c; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('814ba3ac-d6c3-4dcc-98d4-4cb6721146a9')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%AF%E3%82%8B%E3%81%B2ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('814ba3ac-d6c3-4dcc-98d4-4cb6721146a9')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%AF%E3%82%8B%E3%81%B2ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('814ba3ac-d6c3-4dcc-98d4-4cb6721146a9')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('814ba3ac-d6c3-4dcc-98d4-4cb6721146a9')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -35479,7 +35481,7 @@ HO1 『　記　』　症状：想い出と呼称される記憶を蝕まれて�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #bfdfcd; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('2d73468e-0b46-41b1-8b22-4b18c586c2ae')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%91%E3%83%88%E3%83%AA%E3%82%BFss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('2d73468e-0b46-41b1-8b22-4b18c586c2ae')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%91%E3%83%88%E3%83%AA%E3%82%BFss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('2d73468e-0b46-41b1-8b22-4b18c586c2ae')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('2d73468e-0b46-41b1-8b22-4b18c586c2ae')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -35945,7 +35947,7 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #d3cfaa; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('f7bbf9d6-0923-4077-b91e-a1ddfcfd6e47')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%80%E3%81%8D%E3%82%85%E3%81%86.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('f7bbf9d6-0923-4077-b91e-a1ddfcfd6e47')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%80%E3%81%8D%E3%82%85%E3%81%86.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('f7bbf9d6-0923-4077-b91e-a1ddfcfd6e47')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('f7bbf9d6-0923-4077-b91e-a1ddfcfd6e47')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -36485,7 +36487,7 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #796678; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('6bde6e5f-b8b5-4056-bc72-0a43934eb696')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%9D%E3%82%89.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('6bde6e5f-b8b5-4056-bc72-0a43934eb696')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%9D%E3%82%89.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('6bde6e5f-b8b5-4056-bc72-0a43934eb696')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('6bde6e5f-b8b5-4056-bc72-0a43934eb696')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -36938,7 +36940,7 @@ Ricky Weinberg（めーほく）</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #a55297; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('8045fe7d-71d6-4d70-95db-6ceb8e50d7ba')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%B5%E3%81%86%E3%82%89%E3%81%95%E3%82%93ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('8045fe7d-71d6-4d70-95db-6ceb8e50d7ba')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B5%E3%81%86%E3%82%89%E3%81%95%E3%82%93ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('8045fe7d-71d6-4d70-95db-6ceb8e50d7ba')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('8045fe7d-71d6-4d70-95db-6ceb8e50d7ba')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -37570,7 +37572,7 @@ https://iachara.com/view/11185499</span>
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #cf62e7; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('825b3ea2-fa71-4a06-bab6-c959b6fe13a8')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%B5%E3%81%98%E3%81%AEss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('825b3ea2-fa71-4a06-bab6-c959b6fe13a8')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B5%E3%81%98%E3%81%AEss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('825b3ea2-fa71-4a06-bab6-c959b6fe13a8')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('825b3ea2-fa71-4a06-bab6-c959b6fe13a8')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -38311,7 +38313,7 @@ KP：かなたす　PL1：ひなた(HO1)　PL2：あきづ(HO2)
                         </div>
 
                             <div class="hidden lg:flex relative flex-shrink-0 group overflow-hidden" style="width: 280px; background-color: #cf62e7; border-radius: 0 1.5rem 1.5rem 0; transform: translateZ(0); box-shadow: 0 0 0 1px#cf62e7;">
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/%E5%AF%8C%E5%A3%AB%E4%B9%83%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4ss.jpg?raw=true" class="w-full h-full object-cover absolute inset-0 z-0" alt="ディスプレイ画像">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/%E5%AF%8C%E5%A3%AB%E4%B9%83%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4ss.jpg" loading="lazy" onerror="retryLoadImage(this)" class="w-full h-full object-cover absolute inset-0 z-0" alt="ディスプレイ画像">
                             <!-- ホバー時のオーバーレイ -->
                             <div class="admin-only absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-all duration-300 z-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 cursor-pointer" onclick="event.stopPropagation(); setDisplayImage('825b3ea2-fa71-4a06-bab6-c959b6fe13a8')">
                                 <span class="px-4 py-2 bg-white/20 backdrop-blur-md text-white rounded-xl font-bold text-xs shadow-lg border border-white/30">
@@ -38338,7 +38340,7 @@ KP：かなたす　PL1：ひなた(HO1)　PL2：あきづ(HO2)
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #bb69d4; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('40b48770-217c-4853-b38d-e6a23dd5a359')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BE%E3%81%97%E3%82%8Dss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('40b48770-217c-4853-b38d-e6a23dd5a359')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BE%E3%81%97%E3%82%8Dss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('40b48770-217c-4853-b38d-e6a23dd5a359')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('40b48770-217c-4853-b38d-e6a23dd5a359')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -38917,7 +38919,7 @@ KP：かなたす　PL1：ひなた(HO1)　PL2：あきづ(HO2)
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #b4b2bb; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('17b77aa0-4653-4da5-bf70-de7ca8950189')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%A8%E3%81%97%E3%81%BF%E3%81%A4.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('17b77aa0-4653-4da5-bf70-de7ca8950189')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%A8%E3%81%97%E3%81%BF%E3%81%A4.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('17b77aa0-4653-4da5-bf70-de7ca8950189')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('17b77aa0-4653-4da5-bf70-de7ca8950189')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -39432,7 +39434,7 @@ KP：かなたす　PL1：ひなた(HO1)　PL2：あきづ(HO2)
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #f9f361; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('d0a992f5-f82e-4d22-aae4-b8c5822b48c8')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%B9%E3%82%93%E3%81%A6%E3%82%93ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('d0a992f5-f82e-4d22-aae4-b8c5822b48c8')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B9%E3%82%93%E3%81%A6%E3%82%93ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('d0a992f5-f82e-4d22-aae4-b8c5822b48c8')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('d0a992f5-f82e-4d22-aae4-b8c5822b48c8')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -39994,7 +39996,7 @@ K課所属に戻るか辞表を叩きつけるかは自由。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ec4d8d; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('2e4fb14b-7440-476e-a030-a9f98ac6b73a')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BE%E3%82%8A.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('2e4fb14b-7440-476e-a030-a9f98ac6b73a')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BE%E3%82%8A.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('2e4fb14b-7440-476e-a030-a9f98ac6b73a')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('2e4fb14b-7440-476e-a030-a9f98ac6b73a')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -40445,7 +40447,7 @@ K課所属に戻るか辞表を叩きつけるかは自由。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #f46f7c; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('310aa27d-a597-4075-8872-d357a02f15ef')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BB%E3%82%93%E3%81%BE%E3%81%A1%E3%82%83%E3%82%93ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('310aa27d-a597-4075-8872-d357a02f15ef')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BB%E3%82%93%E3%81%BE%E3%81%A1%E3%82%83%E3%82%93ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('310aa27d-a597-4075-8872-d357a02f15ef')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('310aa27d-a597-4075-8872-d357a02f15ef')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -40935,7 +40937,7 @@ K課所属に戻るか辞表を叩きつけるかは自由。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #bfa488; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('c0da8dc3-ddc1-4309-a940-9c85201f118e')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%95%E3%81%8F%E3%82%89.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('c0da8dc3-ddc1-4309-a940-9c85201f118e')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%95%E3%81%8F%E3%82%89.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('c0da8dc3-ddc1-4309-a940-9c85201f118e')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('c0da8dc3-ddc1-4309-a940-9c85201f118e')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -41517,7 +41519,7 @@ NPC：守井 結加里とのコネクション
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #c63c49; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('c61120a0-7333-49cf-86ac-305040282931')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%AD%E3%83%A9%E3%83%A1ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('c61120a0-7333-49cf-86ac-305040282931')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%AD%E3%83%A9%E3%83%A1ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('c61120a0-7333-49cf-86ac-305040282931')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('c61120a0-7333-49cf-86ac-305040282931')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -42091,7 +42093,7 @@ NPC：守井 結加里とのコネクション
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ebb9b8; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('e8d3e1ef-39ff-498d-989e-68d5f12072a4')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%AD%E3%82%80.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('e8d3e1ef-39ff-498d-989e-68d5f12072a4')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%AD%E3%82%80.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('e8d3e1ef-39ff-498d-989e-68d5f12072a4')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('e8d3e1ef-39ff-498d-989e-68d5f12072a4')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -42651,7 +42653,7 @@ NPC：守井 結加里とのコネクション
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #9269bd; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('b18bc572-839f-4e04-a22a-b50f62de33fc')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%B6%E3%82%AF%E3%83%ADss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('b18bc572-839f-4e04-a22a-b50f62de33fc')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%B6%E3%82%AF%E3%83%ADss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('b18bc572-839f-4e04-a22a-b50f62de33fc')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('b18bc572-839f-4e04-a22a-b50f62de33fc')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -43207,7 +43209,7 @@ NPC：守井 結加里とのコネクション
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #cd2042; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('30bdc494-fb67-4e34-8cb4-9f01867887ea')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%8A%E3%82%93%E3%81%94ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('30bdc494-fb67-4e34-8cb4-9f01867887ea')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%8A%E3%82%93%E3%81%94ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('30bdc494-fb67-4e34-8cb4-9f01867887ea')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('30bdc494-fb67-4e34-8cb4-9f01867887ea')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -43707,7 +43709,7 @@ KP：リア　PL1：めろむら、PL2：あきづ、PL3：ゴリダル、PL4：
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #8b8575; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('8d2aa928-0065-406b-b4e1-88c680be6924')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BF%E3%81%AF%E3%82%8B.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('8d2aa928-0065-406b-b4e1-88c680be6924')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BF%E3%81%AF%E3%82%8B.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('8d2aa928-0065-406b-b4e1-88c680be6924')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('8d2aa928-0065-406b-b4e1-88c680be6924')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -44207,7 +44209,7 @@ GM:ミナト　PL1:あきづ　PL2:いちゃ　PL3:いぶし銀　PL4:イツキ�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #70594f; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('945d8f28-2209-46c0-a6b3-ae732f0af80a')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8B%E3%81%AD%E3%81%97%E3%81%92.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('945d8f28-2209-46c0-a6b3-ae732f0af80a')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8B%E3%81%AD%E3%81%97%E3%81%92.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('945d8f28-2209-46c0-a6b3-ae732f0af80a')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('945d8f28-2209-46c0-a6b3-ae732f0af80a')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -44717,7 +44719,7 @@ GM:ミナト　PL1:あきづ　PL2:いちゃ　PL3:いぶし銀　PL4:イツキ�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #ef3d5d; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('1da19072-81f4-4ba6-8b0e-4628effefe72')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%9F%E3%83%88%E3%83%A9ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('1da19072-81f4-4ba6-8b0e-4628effefe72')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%9F%E3%83%88%E3%83%A9ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('1da19072-81f4-4ba6-8b0e-4628effefe72')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('1da19072-81f4-4ba6-8b0e-4628effefe72')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -45193,7 +45195,7 @@ GM:ミナト　PL1:あきづ　PL2:いちゃ　PL3:いぶし銀　PL4:イツキ�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #4a6c56; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('8d992f64-33e4-476d-8bcc-fa1eed64a64d')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E5%A4%AB%E5%A9%A6%E5%B2%A9%E5%87%B6%E4%B8%80ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('8d992f64-33e4-476d-8bcc-fa1eed64a64d')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E5%A4%AB%E5%A9%A6%E5%B2%A9%E5%87%B6%E4%B8%80ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('8d992f64-33e4-476d-8bcc-fa1eed64a64d')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('8d992f64-33e4-476d-8bcc-fa1eed64a64d')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -45706,7 +45708,7 @@ GM:ミナト　PL1:あきづ　PL2:いちゃ　PL3:いぶし銀　PL4:イツキ�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #6458a2; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('8574f47c-524e-4953-a000-2a09226f98bf')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%9F%E3%81%BE%E3%81%93ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('8574f47c-524e-4953-a000-2a09226f98bf')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%9F%E3%81%BE%E3%81%93ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('8574f47c-524e-4953-a000-2a09226f98bf')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('8574f47c-524e-4953-a000-2a09226f98bf')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -46259,7 +46261,7 @@ KP：Fel　PL1：ゴリダル　PL2：かふぇてら　PL3：あきづ
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #509de4; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('52d16144-1f54-4432-91bc-91b7e2cdb6b3')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%BF%E3%83%84%E3%82%ADss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('52d16144-1f54-4432-91bc-91b7e2cdb6b3')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%BF%E3%83%84%E3%82%ADss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('52d16144-1f54-4432-91bc-91b7e2cdb6b3')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('52d16144-1f54-4432-91bc-91b7e2cdb6b3')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -46737,7 +46739,7 @@ ED後の扱いはシナリオに明記はないが、叢雲は白南風からAF�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #dfb8cf; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('1ea4cf43-86f4-4d99-8bd5-01e960f9d1c1')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%A1%E3%82%A4%E3%82%ABss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('1ea4cf43-86f4-4d99-8bd5-01e960f9d1c1')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%A1%E3%82%A4%E3%82%ABss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('1ea4cf43-86f4-4d99-8bd5-01e960f9d1c1')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('1ea4cf43-86f4-4d99-8bd5-01e960f9d1c1')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -47321,7 +47323,7 @@ HOニトロの「仕事」の相棒であり、幼少期から共に居た親友
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #a26fc2; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('b6187aa1-9bbf-46f8-acb3-4ebc982c7a42')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8F%E3%81%BE%E3%81%B2%E3%81%95ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('b6187aa1-9bbf-46f8-acb3-4ebc982c7a42')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8F%E3%81%BE%E3%81%B2%E3%81%95ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('b6187aa1-9bbf-46f8-acb3-4ebc982c7a42')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('b6187aa1-9bbf-46f8-acb3-4ebc982c7a42')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -47768,7 +47770,7 @@ KP:かなたす　PL1:ミナト　PL2:あきづ　PL3:vivi　PL4:カシム
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #d0a85c; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('8e73d008-2e8a-409e-b766-4f239cd885f0')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%92%E3%82%B5%E3%82%B4.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('8e73d008-2e8a-409e-b766-4f239cd885f0')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%92%E3%82%B5%E3%82%B4.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('8e73d008-2e8a-409e-b766-4f239cd885f0')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('8e73d008-2e8a-409e-b766-4f239cd885f0')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -48302,7 +48304,7 @@ KP:かなたす　PL1:ミナト　PL2:あきづ　PL3:vivi　PL4:カシム
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #d1c8bd; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('7fd2a253-f3ea-4e6b-812b-0a517d206ae3')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%AE%E3%81%BC%E3%82%8B.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('7fd2a253-f3ea-4e6b-812b-0a517d206ae3')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%AE%E3%81%BC%E3%82%8B.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('7fd2a253-f3ea-4e6b-812b-0a517d206ae3')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('7fd2a253-f3ea-4e6b-812b-0a517d206ae3')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -48852,7 +48854,7 @@ HO4-A「並び立つ双耳峰」
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #e4c27a; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('383a6e24-43d6-4c10-863d-f364b012e54e')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%9F%E3%82%B3%E3%83%88.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('383a6e24-43d6-4c10-863d-f364b012e54e')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%9F%E3%82%B3%E3%83%88.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('383a6e24-43d6-4c10-863d-f364b012e54e')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('383a6e24-43d6-4c10-863d-f364b012e54e')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -49324,7 +49326,7 @@ KP：ミナト　PL1：あきづ　PL2：こが
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #5d5457; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('553dbf27-2859-4954-bc7a-60fae30682c7')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%86%E3%82%81%E5%85%88%E7%94%9Fss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('553dbf27-2859-4954-bc7a-60fae30682c7')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%86%E3%82%81%E5%85%88%E7%94%9Fss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('553dbf27-2859-4954-bc7a-60fae30682c7')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('553dbf27-2859-4954-bc7a-60fae30682c7')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -49854,7 +49856,7 @@ HO補正：芸術技能1つ（趣味）の技能値に＋50%⇒ゆめにっき�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #4e4e4e; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('4f2055ca-d30f-4aac-a38e-80f2066848cb')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%A8%E3%81%B0%E3%82%8A.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('4f2055ca-d30f-4aac-a38e-80f2066848cb')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%A8%E3%81%B0%E3%82%8A.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('4f2055ca-d30f-4aac-a38e-80f2066848cb')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('4f2055ca-d30f-4aac-a38e-80f2066848cb')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -50284,7 +50286,7 @@ HO補正：芸術技能1つ（趣味）の技能値に＋50%⇒ゆめにっき�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #b8e1e3; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('252b1168-04d2-4995-9f02-248bc563b255')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%82%82%E3%81%BF%E3%81%98.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('252b1168-04d2-4995-9f02-248bc563b255')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%82%82%E3%81%BF%E3%81%98.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('252b1168-04d2-4995-9f02-248bc563b255')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('252b1168-04d2-4995-9f02-248bc563b255')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -50861,7 +50863,7 @@ HO補正：芸術技能1つ（趣味）の技能値に＋50%⇒ゆめにっき�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #d6c9c3; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('184035f6-3081-4a5f-9b9e-1ba483630033')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%A8%E3%83%AB.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('184035f6-3081-4a5f-9b9e-1ba483630033')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%A8%E3%83%AB.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('184035f6-3081-4a5f-9b9e-1ba483630033')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('184035f6-3081-4a5f-9b9e-1ba483630033')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -51433,7 +51435,7 @@ HO2の感情について……
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #797285; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('2d381c9a-444c-48f7-9d1b-4e62a66e634a')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%8B%E3%81%99%E3%81%BFss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('2d381c9a-444c-48f7-9d1b-4e62a66e634a')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%8B%E3%81%99%E3%81%BFss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('2d381c9a-444c-48f7-9d1b-4e62a66e634a')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('2d381c9a-444c-48f7-9d1b-4e62a66e634a')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -51994,7 +51996,7 @@ NPC：古森メメ、ソネザキさん、スグルさん、シスター・メ�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #6b4119; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('ee9feb9d-4818-4254-a3c7-a22f67a55d8a')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%AB%E3%83%89%E3%83%AA%E3%83%83%E3%83%97ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('ee9feb9d-4818-4254-a3c7-a22f67a55d8a')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%AB%E3%83%89%E3%83%AA%E3%83%83%E3%83%97ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('ee9feb9d-4818-4254-a3c7-a22f67a55d8a')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('ee9feb9d-4818-4254-a3c7-a22f67a55d8a')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -52526,7 +52528,7 @@ NPC：古森メメ、ソネザキさん、スグルさん、シスター・メ�
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #cf6d14; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('8416623f-2f10-4db8-87da-83825a81b7ce')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%83%AD%E3%83%AC%E3%83%B3%E3%82%B9ss.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('8416623f-2f10-4db8-87da-83825a81b7ce')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%83%AD%E3%83%AC%E3%83%B3%E3%82%B9ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('8416623f-2f10-4db8-87da-83825a81b7ce')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('8416623f-2f10-4db8-87da-83825a81b7ce')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -53025,7 +53027,7 @@ KP:Fel　PL1:あきづ　PL2:すーてん　PL3:ひなた　
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #13ca2a; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('de2d0687-fdcf-40cd-be3d-8111701f89fa')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%86%E3%81%97%E3%81%8Ass.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('de2d0687-fdcf-40cd-be3d-8111701f89fa')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%86%E3%81%97%E3%81%8Ass.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('de2d0687-fdcf-40cd-be3d-8111701f89fa')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('de2d0687-fdcf-40cd-be3d-8111701f89fa')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -53550,7 +53552,7 @@ PCがその質問に対して何と答えたか教えてください。
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #7c6e70; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('989ef1e8-7933-41dd-be3d-6bcb6d683599')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://github.com/akidu0621-del/coc-database/blob/main/picture/icon/%E3%81%BE%E3%81%93%E3%81%A8.png?raw=true" class="image-preview" onclick="event.stopPropagation(); setIconImage('989ef1e8-7933-41dd-be3d-6bcb6d683599')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%BE%E3%81%93%E3%81%A8.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('989ef1e8-7933-41dd-be3d-6bcb6d683599')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('989ef1e8-7933-41dd-be3d-6bcb6d683599')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -56158,8 +56160,10 @@ function updateSessionOptions() {
                             <td class="px-4 py-2 table-sticky-col bg-white dark:bg-slate-800 transition-colors">
                                 <div class="flex items-center gap-3">
                                     <div class="relative flex-shrink-0">
-                                        <img src="${c.image || noImage}" class="w-9 h-9 rounded-full object-cover border-2" style="border-color: ${c.isLost ? '#94a3b8' : c.color}">
-                                        ${c.isLost ? '<div class="absolute inset-0 bg-black/50 rounded-full flex items-center justify-center"><i class="fas fa-skull text-[10px] text-white"></i></div>' : ''}
+                                    <img src="${c.image ? optimizeImageUrl(c.image) : noImage}" 
+                                    loading="lazy"
+                                    onerror="retryLoadImage(this)"
+                                    class="w-9 h-9 rounded-full object-cover border-2" style="border-color: ${c.isLost ? '#94a3b8' : c.color}">
                                     </div>
                                     <div class="flex flex-col max-w-[150px] overflow-hidden">
                                         <span class="text-[9px] text-slate-400 font-bold leading-none mb-0.5 truncate w-full">${c.yomi || ''}</span>
@@ -56411,8 +56415,10 @@ function updateSessionOptions() {
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: ${c.color}; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('${c.id}')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="${c.image || noImage}" 
-                                     class="image-preview" onclick="event.stopPropagation(); setIconImage('${c.id}')" title="アイコン画像URLを設定">
+                            <img src="${c.image ? optimizeImageUrl(c.image) : noImage}" 
+                            loading="lazy"
+                            onerror="retryLoadImage(this)"
+                            class="image-preview" onclick="event.stopPropagation(); setIconImage('${c.id}')" title="アイコン画像URLを設定">
                                       ${c.image ? `<button onclick="event.stopPropagation(); removeCharacterImage('${c.id}')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>` : ''}
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -56543,7 +56549,7 @@ function updateSessionOptions() {
 
                             <div class="hidden lg:flex relative flex-shrink-0 group overflow-hidden" style="width: 280px; background-color: ${c.color}; border-radius: 0 1.5rem 1.5rem 0; transform: translateZ(0); box-shadow: 0 0 0 1px${c.color};">
                             ${c.displayImageUrl 
-                                ? `<img src="${c.displayImageUrl}" class="w-full h-full object-cover absolute inset-0 z-0" alt="ディスプレイ画像">` 
+                            ? `<img src="${optimizeImageUrl(c.displayImageUrl)}" loading="lazy" onerror="retryLoadImage(this)" class="w-full h-full object-cover absolute inset-0 z-0" alt="ディスプレイ画像">`
                                 : `<div class="w-full h-full absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 16px 16px;"></div>`
                             }
                             <!-- ホバー時のオーバーレイ -->
@@ -57828,83 +57834,109 @@ function updateSessionOptions() {
             }
 
             // JSONファイルを読み込んでブラウザ（ローカルストレージ）に保存する
-// JSONファイルを読み込んでブラウザ（ローカルストレージ）に保存する
-function importBackupData(event) {
-    const file = event.target.files[0];
-    if (!file) return;
+            // JSONファイルを読み込んでブラウザ（ローカルストレージ）に保存する
+            function importBackupData(event) {
+                const file = event.target.files[0];
+                if (!file) return;
 
-    if (!confirm("読み込んだデータで現在の状態を上書きしますか？\n（※現在のPCに入っているデータは消えます）")) {
-        event.target.value = ''; // キャンセル時はリセット
-        return;
-    }
+                if (!confirm("読み込んだデータで現在の状態を上書きしますか？\n（※現在のPCに入っているデータは消えます）")) {
+                    event.target.value = ''; // キャンセル時はリセット
+                    return;
+                }
 
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        try {
-            // まずJSONとして解析できるかチェック
-            const imported = JSON.parse(e.target.result);
-            let isSuccess = false;
-            
-            try {
-                // キャラクターデータの復元
-                if (imported.characters && Array.isArray(imported.characters)) {
-                    localStorage.setItem('coc_db_data', JSON.stringify(imported.characters));
-                    isSuccess = true;
-                } else if (Array.isArray(imported)) {
-                    localStorage.setItem('coc_db_data', JSON.stringify(imported));
-                    isSuccess = true;
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    try {
+                        // まずJSONとして解析できるかチェック
+                        const imported = JSON.parse(e.target.result);
+                        let isSuccess = false;
+                        
+                        try {
+                            // キャラクターデータの復元
+                            if (imported.characters && Array.isArray(imported.characters)) {
+                                localStorage.setItem('coc_db_data', JSON.stringify(imported.characters));
+                                isSuccess = true;
+                            } else if (Array.isArray(imported)) {
+                                localStorage.setItem('coc_db_data', JSON.stringify(imported));
+                                isSuccess = true;
+                            }
+                            
+                            // セッションデータの復元
+                            if (imported.sessions && Array.isArray(imported.sessions)) {
+                                localStorage.setItem('coc_db_sessions', JSON.stringify(imported.sessions));
+                                isSuccess = true;
+                            }
+
+                            if (isSuccess) {
+                                alert("データの引き継ぎが完了しました！\n画面を再読み込みします。");
+                                window.location.reload(); // ページをリロードして反映
+                            } else {
+                                alert("エラー：対応していないデータ形式です。");
+                            }
+                        } catch (storageErr) {
+                            // 保存時に容量オーバーなどで失敗した場合
+                            if (storageErr.name === 'QuotaExceededError' || storageErr.message.toLowerCase().includes('quota')) {
+                                alert("エラー：ブラウザの保存容量制限（約5MB）をオーバーしています。\n元のPCで画像を直接URL指定に切り替えるなどして、データサイズを減らしてから再度書き出してください。");
+                            } else {
+                                alert("保存中にシステムエラーが発生しました：\n" + storageErr.message);
+                            }
+                        }
+                    } catch (err) {
+                        // ファイルがJSONとして壊れていた場合
+                        alert("ファイルの読み込みに失敗しました（データ破損または形式違い）。\n\nエラー詳細: " + err.message);
+                        console.error(err);
+                    }
+                    event.target.value = '';
+                };
+                reader.readAsText(file);
+            }
+
+            // ==========================================
+            // ▼▼ カレンダー月送り用の処理（修正版） ▼▼
+            // ==========================================
+            function changeMonth(diff) {
+                currentMonth += diff;
+                
+                // 年またぎの処理
+                if (currentMonth < 0) {
+                    currentMonth = 11; // 12月
+                    currentYear--;
+                } else if (currentMonth > 11) {
+                    currentMonth = 0; // 1月
+                    currentYear++;
                 }
                 
-                // セッションデータの復元
-                if (imported.sessions && Array.isArray(imported.sessions)) {
-                    localStorage.setItem('coc_db_sessions', JSON.stringify(imported.sessions));
-                    isSuccess = true;
+                // カレンダーを再描画
+                if (typeof renderCalendar === 'function') {
+                    renderCalendar();
                 }
+            }
 
-                if (isSuccess) {
-                    alert("データの引き継ぎが完了しました！\n画面を再読み込みします。");
-                    window.location.reload(); // ページをリロードして反映
-                } else {
-                    alert("エラー：対応していないデータ形式です。");
-                }
-            } catch (storageErr) {
-                // 保存時に容量オーバーなどで失敗した場合
-                if (storageErr.name === 'QuotaExceededError' || storageErr.message.toLowerCase().includes('quota')) {
-                    alert("エラー：ブラウザの保存容量制限（約5MB）をオーバーしています。\n元のPCで画像を直接URL指定に切り替えるなどして、データサイズを減らしてから再度書き出してください。");
-                } else {
-                    alert("保存中にシステムエラーが発生しました：\n" + storageErr.message);
-                }
+            // ==========================================
+            // ▼▼ GitHub画像URLの自動最適化＆自動リトライ ▼▼
+            // ==========================================
+            function optimizeImageUrl(url) {
+                if (!url) return "";
+                // github.com/.../blob/ブランチ名/...?raw=true を raw.githubusercontent.com に自動変換
+                return url.replace(
+                    /^https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/blob\/([^\/]+)\/(.+?)(\?raw=true)?$/,
+                    'https://raw.githubusercontent.com/$1/$2/$3/$4'
+                );
             }
-        } catch (err) {
-            // ファイルがJSONとして壊れていた場合
-            alert("ファイルの読み込みに失敗しました（データ破損または形式違い）。\n\nエラー詳細: " + err.message);
-            console.error(err);
-        }
-        event.target.value = '';
-    };
-    reader.readAsText(file);
-}
 
-// ==========================================
-        // ▼▼ カレンダー月送り用の処理（修正版） ▼▼
-        // ==========================================
-        function changeMonth(diff) {
-            currentMonth += diff;
-            
-            // 年またぎの処理
-            if (currentMonth < 0) {
-                currentMonth = 11; // 12月
-                currentYear--;
-            } else if (currentMonth > 11) {
-                currentMonth = 0; // 1月
-                currentYear++;
+            function retryLoadImage(img) {
+                // 1回だけ自動リトライを行う（無限ループ防止）
+                if (!img.dataset.retried) {
+                    img.dataset.retried = 'true';
+                    // 1秒〜2.5秒のランダムな時間差をつけて再アクセス（同時アクセス制限の回避）
+                    const delay = 1000 + Math.random() * 1500;
+                    setTimeout(() => {
+                        const currentSrc = img.src;
+                        img.src = '';
+                        img.src = currentSrc;
+                    }, delay);
+                }
             }
-            
-            // カレンダーを再描画
-            if (typeof renderCalendar === 'function') {
-                renderCalendar();
-            }
-        }
 
 </script>
 
