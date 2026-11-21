@@ -675,9 +675,9 @@
         <div id="investigatorView">
                 <div class="flex flex-wrap justify-between items-center mb-6 gap-4 sticky top-0 z-[900] py-2 bg-[var(--bg-main)] transition-colors">
                     <div class="flex items-center flex-wrap gap-2 md:gap-4" id="normalToolbar">
-                        <button onclick="setViewMode('simple')" id="btn-mode-simple" data-mode="simple" class="view-btn font-black py-2 border-b-2 transition-all border-indigo-500 text-indigo-600 force-dark-text-muted active">シンプル</button>
-                        <button onclick="setViewMode('icons')" id="btn-mode-icons" data-mode="icons" class="view-btn font-black py-2 border-b-2 transition-all border-transparent text-slate-400 hover:text-slate-600 force-dark-text-muted">アイコン</button>
-                        <button onclick="setViewMode('list')" id="btn-mode-list" data-mode="list" class="view-btn font-black py-2 border-b-2 transition-all border-transparent text-slate-400 hover:text-slate-600 force-dark-text-muted">詳細</button>
+                        <button onclick="setViewMode('simple')" id="btn-mode-simple" data-mode="simple" class="view-btn font-black py-2 border-b-2 transition-all force-dark-text-muted active border-indigo-500 text-indigo-600">シンプル</button>
+                        <button onclick="setViewMode('icons')" id="btn-mode-icons" data-mode="icons" class="view-btn font-black py-2 border-b-2 transition-all hover:text-slate-600 force-dark-text-muted border-transparent text-slate-400">アイコン</button>
+                        <button onclick="setViewMode('list')" id="btn-mode-list" data-mode="list" class="view-btn font-black py-2 border-b-2 transition-all hover:text-slate-600 force-dark-text-muted border-transparent text-slate-400">詳細</button>
                         <button onclick="setViewMode('table')" id="btn-mode-table" data-mode="table" class="view-btn font-black py-2 border-b-2 transition-all border-transparent text-slate-400 hover:text-slate-600 force-dark-text-muted">一覧</button>
                         <div class="h-6 w-px bg-slate-200 dark:bg-slate-700 mx-1"></div>
                         <button onclick="toggleCollapseList()" id="collapseBtn" class="px-3 py-1.5 rounded-xl text-xs font-black bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-indigo-900 transition-all force-dark-text">
@@ -15896,7 +15896,7 @@ KP：ミナト　PL1：あきづ　PL2：ひなた
                             <div class="mb-8">
                                 <span class="text-[9px] text-theme-muted font-black block mb-2 uppercase tracking-widest">MEMO <i class="fas fa-sticky-note ml-1"></i></span>
                                 <div class="p-4 rounded-xl italic text-sm font-bold text-theme-sub info-panel">
-                                    <span class="editable-field block w-full force-dark-text" data-id="6daf51e0-b171-4f31-a8ce-cbe62773a2cd" data-field="memo" data-bound="true">HO：聖職者</span>
+                                    <span class="editable-field block w-full force-dark-text" data-id="6daf51e0-b171-4f31-a8ce-cbe62773a2cd" data-field="memo" data-bound="true">HO：聖職者、愛称：ガビィ</span>
                                 </div>
                             </div>
                             
@@ -26557,13 +26557,15 @@ HO1の正体は鬼を生み出した畏怒羅の末裔だ。陰陽術を使用�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="03b56e40-3f9c-4eb8-80db-fd37999c4aa8" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="03b56e40-3f9c-4eb8-80db-fd37999c4aa8" data-field="likes" data-bound="true">・ラーメン（とくに鶏白湯）
+・ラーメン作り</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="03b56e40-3f9c-4eb8-80db-fd37999c4aa8" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="03b56e40-3f9c-4eb8-80db-fd37999c4aa8" data-field="dislikes" data-bound="true">・他の麺類全般
+・「ヒメちゃん」と呼ばれること</span>
                                     </div>
                                 </div>
                             </div>
@@ -26947,12 +26949,12 @@ SAN値が0になれば双方の人格が消滅し、ロスト。</span>
                                     <div class="flex items-center gap-2 whitespace-nowrap overflow-hidden max-w-full justify-center">
                                         <span class="px-3 py-1 edition-tag-6 rounded-lg font-black text-sm whitespace-nowrap flex-shrink-0" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">6版</span>
                                         <span class="px-4 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-slate-600 dark:text-slate-300 font-bold text-lg text-theme-sub whitespace-nowrap overflow-hidden text-ellipsis force-dark-text" style="border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                            <span class="editable-field" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="age" data-bound="true"></span>歳 / 
+                                            <span class="editable-field" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="age" data-bound="true">29</span>歳 / 
                                             <span class="editable-field" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="gender" data-bound="true">女性</span>
                                         </span>
                                     </div>
-                                    <span class="px-4 py-1 rounded-lg font-black text-lg job-tag w-full text-center truncate bg-white" style="color:#8b8285; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" title="不明">
-                                        <span class="editable-field" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="job" data-bound="true">不明</span>
+                                    <span class="px-4 py-1 rounded-lg font-black text-lg job-tag w-full text-center truncate bg-white" style="color:#8b8285; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.2);" title="無職（ディレッタントベース）">
+                                        <span class="editable-field" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="job" data-bound="true">無職（ディレッタントベース）</span>
                                     </span>
                                 </div>
                                 
@@ -26983,7 +26985,7 @@ SAN値が0になれば双方の人格が消滅し、ロスト。</span>
                             <div class="mb-8">
                                 <span class="text-[9px] text-theme-muted font-black block mb-2 uppercase tracking-widest">MEMO <i class="fas fa-sticky-note ml-1"></i></span>
                                 <div class="p-4 rounded-xl italic text-sm font-bold text-theme-sub info-panel">
-                                    <span class="editable-field block w-full force-dark-text" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="memo" data-bound="true">HO不老不死</span>
+                                    <span class="editable-field block w-full force-dark-text" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="memo" data-bound="true">HO不老不死、年齢不詳なので見た目年齢</span>
                                 </div>
                             </div>
                             
@@ -26992,13 +26994,14 @@ SAN値が0になれば双方の人格が消滅し、ロスト。</span>
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="likes" data-bound="true">・世界
+・目に映るものすべて</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="95208efe-f366-4e96-a53c-d54a670c49c3" data-field="dislikes" data-bound="true">・とくになし</span>
                                     </div>
                                 </div>
                             </div>
@@ -27481,13 +27484,16 @@ SAN値が0になれば双方の人格が消滅し、ロスト。</span>
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="de178660-8ca3-4c3d-910f-469717f1a0f3" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="de178660-8ca3-4c3d-910f-469717f1a0f3" data-field="likes" data-bound="true">・チーズピザ
+・人間観察
+・子供</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="de178660-8ca3-4c3d-910f-469717f1a0f3" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="de178660-8ca3-4c3d-910f-469717f1a0f3" data-field="dislikes" data-bound="true">・苦いもの全般
+・漫才</span>
                                     </div>
                                 </div>
                             </div>
@@ -28241,13 +28247,14 @@ SAN値が0になれば双方の人格が消滅し、ロスト。</span>
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="d5392183-7b63-4065-9d2e-de26a64f6774" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="d5392183-7b63-4065-9d2e-de26a64f6774" data-field="likes" data-bound="true">・ナイフの研磨
+・肉</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="d5392183-7b63-4065-9d2e-de26a64f6774" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="d5392183-7b63-4065-9d2e-de26a64f6774" data-field="dislikes" data-bound="true">・野菜全般</span>
                                     </div>
                                 </div>
                             </div>
@@ -28849,13 +28856,14 @@ https://iachara.com/view/12027923
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="66c171a0-48d4-4998-a345-b2fe53b08686" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="66c171a0-48d4-4998-a345-b2fe53b08686" data-field="likes" data-bound="true">・ナツメお嬢様
+・家事</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="66c171a0-48d4-4998-a345-b2fe53b08686" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="66c171a0-48d4-4998-a345-b2fe53b08686" data-field="dislikes" data-bound="true">・荒事</span>
                                     </div>
                                 </div>
                             </div>
@@ -29359,13 +29367,14 @@ KP：かなたす　PL1：あきづ　PL2：ひなた
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b1ce3a16-c6de-4adb-a707-2fb4663c9c14" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b1ce3a16-c6de-4adb-a707-2fb4663c9c14" data-field="likes" data-bound="true">・ロウバオ（肉まん）
+・雑技</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b1ce3a16-c6de-4adb-a707-2fb4663c9c14" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b1ce3a16-c6de-4adb-a707-2fb4663c9c14" data-field="dislikes" data-bound="true">・とくになし</span>
                                     </div>
                                 </div>
                             </div>
@@ -30902,13 +30911,14 @@ POW-15、幸運-16
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2e65b784-8c70-490e-ba86-4c013ba023e7" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2e65b784-8c70-490e-ba86-4c013ba023e7" data-field="likes" data-bound="true">・祖母
+・和食</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2e65b784-8c70-490e-ba86-4c013ba023e7" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2e65b784-8c70-490e-ba86-4c013ba023e7" data-field="dislikes" data-bound="true">・職場</span>
                                     </div>
                                 </div>
                             </div>
@@ -31425,13 +31435,14 @@ SAN値回復+19
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="68d9392c-fa16-45df-be01-311711ca2784" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="68d9392c-fa16-45df-be01-311711ca2784" data-field="likes" data-bound="true">・チュッパチャプス
+・卓上旅行</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="68d9392c-fa16-45df-be01-311711ca2784" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="68d9392c-fa16-45df-be01-311711ca2784" data-field="dislikes" data-bound="true">・炭酸飲料</span>
                                     </div>
                                 </div>
                             </div>
@@ -31882,13 +31893,14 @@ SAN値回復+19
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="13d56676-3848-40ed-83e1-3ade0a1cf874" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="13d56676-3848-40ed-83e1-3ade0a1cf874" data-field="likes" data-bound="true">・和菓子
+・(日本の)都市伝説</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="13d56676-3848-40ed-83e1-3ade0a1cf874" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="13d56676-3848-40ed-83e1-3ade0a1cf874" data-field="dislikes" data-bound="true">・アルコール類</span>
                                     </div>
                                 </div>
                             </div>
@@ -32410,13 +32422,15 @@ HO1専用 事前情報 （秘匿HO）
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b1b0f9cb-f2c7-45d5-8809-826ef357fbf2" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b1b0f9cb-f2c7-45d5-8809-826ef357fbf2" data-field="likes" data-bound="true">・お金
+・噂話
+・ツーリング</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b1b0f9cb-f2c7-45d5-8809-826ef357fbf2" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b1b0f9cb-f2c7-45d5-8809-826ef357fbf2" data-field="dislikes" data-bound="true">・お金の無駄遣い</span>
                                     </div>
                                 </div>
                             </div>
@@ -32936,13 +32950,14 @@ HO1専用 事前情報 （秘匿HO）
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="883f7433-0c4d-4a04-80af-9fd568112968" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="883f7433-0c4d-4a04-80af-9fd568112968" data-field="likes" data-bound="true">・母の手料理
+・浜辺</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="883f7433-0c4d-4a04-80af-9fd568112968" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="883f7433-0c4d-4a04-80af-9fd568112968" data-field="dislikes" data-bound="true">・虫</span>
                                     </div>
                                 </div>
                             </div>
@@ -33451,13 +33466,14 @@ HO2
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="9b42088c-32c5-46c1-bcab-7738de6e631e" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="9b42088c-32c5-46c1-bcab-7738de6e631e" data-field="likes" data-bound="true">・特ダネ
+・ホットドッグ</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="9b42088c-32c5-46c1-bcab-7738de6e631e" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="9b42088c-32c5-46c1-bcab-7738de6e631e" data-field="dislikes" data-bound="true">・じっとしていること</span>
                                     </div>
                                 </div>
                             </div>
@@ -33978,13 +33994,15 @@ SAN値回復+29
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="3894dbbb-8d47-48ae-8ad9-095ac786a092" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="3894dbbb-8d47-48ae-8ad9-095ac786a092" data-field="likes" data-bound="true">・カクテル
+・立ち飲み
+・彼女</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="3894dbbb-8d47-48ae-8ad9-095ac786a092" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="3894dbbb-8d47-48ae-8ad9-095ac786a092" data-field="dislikes" data-bound="true">・人混み</span>
                                     </div>
                                 </div>
                             </div>
@@ -34489,13 +34507,15 @@ SAN値回復+29
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="c536f508-3994-4164-93c0-a62235ddf568" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="c536f508-3994-4164-93c0-a62235ddf568" data-field="likes" data-bound="true">・読書
+・人間観察
+・ねこ</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="c536f508-3994-4164-93c0-a62235ddf568" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="c536f508-3994-4164-93c0-a62235ddf568" data-field="dislikes" data-bound="true">・硬い床</span>
                                     </div>
                                 </div>
                             </div>
@@ -35107,13 +35127,15 @@ KP：かなたす　PL1：めろむら　PL2：ひなた　PL3：ゴリダル　
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="814ba3ac-d6c3-4dcc-98d4-4cb6721146a9" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="814ba3ac-d6c3-4dcc-98d4-4cb6721146a9" data-field="likes" data-bound="true">・さくらんぼ
+・読書
+・動物</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="814ba3ac-d6c3-4dcc-98d4-4cb6721146a9" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="814ba3ac-d6c3-4dcc-98d4-4cb6721146a9" data-field="dislikes" data-bound="true">・ピーマン</span>
                                     </div>
                                 </div>
                             </div>
@@ -36545,13 +36567,15 @@ GM:めろむら　sGM:Fel　PL1:いぶし銀　PL2:あきづ　PL3:ゴリダル�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="likes" data-bound="true">・手軽に食べられるもの
+・自作PCの組み立て
+・アジトの模様替え</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="6bde6e5f-b8b5-4056-bc72-0a43934eb696" data-field="dislikes" data-bound="true">・きのこ類全般</span>
                                     </div>
                                 </div>
                             </div>
@@ -36998,13 +37022,15 @@ Ricky Weinberg（めーほく）</span>
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="8045fe7d-71d6-4d70-95db-6ceb8e50d7ba" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="8045fe7d-71d6-4d70-95db-6ceb8e50d7ba" data-field="likes" data-bound="true">・血液
+・ジャンクフード
+・犯罪心理学</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="8045fe7d-71d6-4d70-95db-6ceb8e50d7ba" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="8045fe7d-71d6-4d70-95db-6ceb8e50d7ba" data-field="dislikes" data-bound="true">・魚類全般（とくに生食。刺身は食べられない</span>
                                     </div>
                                 </div>
                             </div>
@@ -37598,7 +37624,7 @@ https://iachara.com/view/11185499</span>
                                 <div class="mt-1 w-full text-xs font-bold flex items-center justify-center gap-1 whitespace-nowrap overflow-hidden" style="color: rgba(255,255,255,0.9); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
                                     <span class="truncate" title="誕生日: 1月1日"><i class="fas fa-birthday-cake mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="birthday" data-bound="true">1月1日</span></span>
                                     <span class="mx-0.5">|</span>
-                                    <span class="truncate" title="身長/体重: 149cm / 40kg"><i class="fas fa-ruler-vertical mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="height" data-bound="true">149</span>cm / <i class="fas fa-weight mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="weight" data-bound="true">40</span>kg</span>
+                                    <span class="truncate" title="身長/体重: 150cm / 42kg"><i class="fas fa-ruler-vertical mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="height" data-bound="true">150</span>cm / <i class="fas fa-weight mr-0.5"></i><span class="editable-field" data-id="825b3ea2-fa71-4a06-bab6-c959b6fe13a8" data-field="weight" data-bound="true">42</span>kg</span>
                                 </div>
 
                                 
@@ -39432,7 +39458,7 @@ KP：かなたす　PL1：ひなた(HO1)　PL2：あきづ(HO2)
                         <!-- ▼ styleの重複を修正 ▼ -->
                         <div class="header-section" style="background-color: #f9f361; cursor: pointer; flex-shrink: 0; position: relative; width: 260px; max-width: 100%; overflow: hidden;" onclick="if(!focusedCharId) jumpToChar('d0a992f5-f82e-4d22-aae4-b8c5822b48c8')">
                         <!-- ▼ onclickの中身を setIconImage に変更しました ▼ -->
-                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B9%E3%82%93%E3%81%A6%E3%82%93ss.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('d0a992f5-f82e-4d22-aae4-b8c5822b48c8')" title="アイコン画像URLを設定">
+                            <img src="https://raw.githubusercontent.com/akidu0621-del/coc-database/main/picture/icon/%E3%81%B9%E3%82%93%E3%81%A6%E3%82%93.png" loading="lazy" onerror="retryLoadImage(this)" class="image-preview" onclick="event.stopPropagation(); setIconImage('d0a992f5-f82e-4d22-aae4-b8c5822b48c8')" title="アイコン画像URLを設定">
                                       <button onclick="event.stopPropagation(); removeCharacterImage('d0a992f5-f82e-4d22-aae4-b8c5822b48c8')" class="admin-only absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-rose-500 z-10 transition-colors" title="画像を削除"><i class="fas fa-times"></i></button>
                             <div class="info-container">
                                 <div class="char-yomi text-[10px] font-black tracking-widest mb-1 uppercase w-full text-center truncate" style="color: rgba(255,255,255,0.8); text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
@@ -39492,13 +39518,16 @@ KP：かなたす　PL1：ひなた(HO1)　PL2：あきづ(HO2)
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="d0a992f5-f82e-4d22-aae4-b8c5822b48c8" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="d0a992f5-f82e-4d22-aae4-b8c5822b48c8" data-field="likes" data-bound="true">・お金
+・お酒
+・高カロリーの食べもの
+・(勝てる)ギャンブル</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="d0a992f5-f82e-4d22-aae4-b8c5822b48c8" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="d0a992f5-f82e-4d22-aae4-b8c5822b48c8" data-field="dislikes" data-bound="true">・野菜全般</span>
                                     </div>
                                 </div>
                             </div>
@@ -39532,6 +39561,11 @@ KP：かなたす　PL1：ひなた(HO1)　PL2：あきづ(HO2)
 4d100 (4D100) ＞ 163[53,8,19,83] ＞ 163＋80万円
 
 K課所属に戻るか辞表を叩きつけるかは自由。
+
+❐K課で生えた設定(?)
+・実は処女
+操⇒金⇒命。強い貞操観念があり、表向きは下ネタや下品な行動も厭わないように見せかけて実は生娘。男性に興味がないわけではないが、理想が高い（と言うのも、周りにロクな男がいなかったから、と言う裏付けもありそうだが...。
+面と向かって公言するようなことはないが、咄嗟の場面では口をついて出ることもあるかもしれない。
 
 【同卓探索者】
 真中 清善（カルボナーラ）
@@ -40054,13 +40088,15 @@ K課所属に戻るか辞表を叩きつけるかは自由。
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2e4fb14b-7440-476e-a030-a9f98ac6b73a" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2e4fb14b-7440-476e-a030-a9f98ac6b73a" data-field="likes" data-bound="true">・お肉
+・スポーツドリンク
+・体を動かすこと</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2e4fb14b-7440-476e-a030-a9f98ac6b73a" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2e4fb14b-7440-476e-a030-a9f98ac6b73a" data-field="dislikes" data-bound="true">・お酒（酔う、という感覚が苦手）</span>
                                     </div>
                                 </div>
                             </div>
@@ -40505,13 +40541,16 @@ K課所属に戻るか辞表を叩きつけるかは自由。
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="310aa27d-a597-4075-8872-d357a02f15ef" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="310aa27d-a597-4075-8872-d357a02f15ef" data-field="likes" data-bound="true">・兄
+・演劇
+・ツッコミ
+・ねこ</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="310aa27d-a597-4075-8872-d357a02f15ef" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="310aa27d-a597-4075-8872-d357a02f15ef" data-field="dislikes" data-bound="true">・面白くないこと</span>
                                     </div>
                                 </div>
                             </div>
@@ -41577,13 +41616,16 @@ NPC：守井 結加里とのコネクション
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="c61120a0-7333-49cf-86ac-305040282931" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="c61120a0-7333-49cf-86ac-305040282931" data-field="likes" data-bound="true">・イケメン
+・お酒
+・たこ焼き
+・サブカルチャー全般</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="c61120a0-7333-49cf-86ac-305040282931" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="c61120a0-7333-49cf-86ac-305040282931" data-field="dislikes" data-bound="true">・お餅</span>
                                     </div>
                                 </div>
                             </div>
@@ -42711,13 +42753,15 @@ NPC：守井 結加里とのコネクション
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b18bc572-839f-4e04-a22a-b50f62de33fc" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b18bc572-839f-4e04-a22a-b50f62de33fc" data-field="likes" data-bound="true">・宝石
+・美術品
+・冷凍食品</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b18bc572-839f-4e04-a22a-b50f62de33fc" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b18bc572-839f-4e04-a22a-b50f62de33fc" data-field="dislikes" data-bound="true">・カレーうどん</span>
                                     </div>
                                 </div>
                             </div>
@@ -43267,13 +43311,14 @@ NPC：守井 結加里とのコネクション
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="30bdc494-fb67-4e34-8cb4-9f01867887ea" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="30bdc494-fb67-4e34-8cb4-9f01867887ea" data-field="likes" data-bound="true">・空手
+・りんご</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="30bdc494-fb67-4e34-8cb4-9f01867887ea" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="30bdc494-fb67-4e34-8cb4-9f01867887ea" data-field="dislikes" data-bound="true">・結婚を想起させるもの</span>
                                     </div>
                                 </div>
                             </div>
@@ -44267,13 +44312,15 @@ GM:ミナト　PL1:あきづ　PL2:いちゃ　PL3:いぶし銀　PL4:イツキ�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="945d8f28-2209-46c0-a6b3-ae732f0af80a" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="945d8f28-2209-46c0-a6b3-ae732f0af80a" data-field="likes" data-bound="true">・宮本武蔵
+・大河ドラマ
+・お祭り</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="945d8f28-2209-46c0-a6b3-ae732f0af80a" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="945d8f28-2209-46c0-a6b3-ae732f0af80a" data-field="dislikes" data-bound="true">・「佐々木」という苗字</span>
                                     </div>
                                 </div>
                             </div>
@@ -44777,13 +44824,15 @@ GM:ミナト　PL1:あきづ　PL2:いちゃ　PL3:いぶし銀　PL4:イツキ�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="1da19072-81f4-4ba6-8b0e-4628effefe72" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="1da19072-81f4-4ba6-8b0e-4628effefe72" data-field="likes" data-bound="true">・哲学
+・「個性」という概念
+・考えること</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="1da19072-81f4-4ba6-8b0e-4628effefe72" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="1da19072-81f4-4ba6-8b0e-4628effefe72" data-field="dislikes" data-bound="true">・とくになし</span>
                                     </div>
                                 </div>
                             </div>
@@ -46319,13 +46368,14 @@ KP：Fel　PL1：ゴリダル　PL2：かふぇてら　PL3：あきづ
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="likes" data-bound="true">・カレーライス
+・体を動かすこと</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="52d16144-1f54-4432-91bc-91b7e2cdb6b3" data-field="dislikes" data-bound="true">・臭いのつよいもの</span>
                                     </div>
                                 </div>
                             </div>
@@ -46797,13 +46847,14 @@ ED後の扱いはシナリオに明記はないが、叢雲は白南風からAF�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="1ea4cf43-86f4-4d99-8bd5-01e960f9d1c1" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="1ea4cf43-86f4-4d99-8bd5-01e960f9d1c1" data-field="likes" data-bound="true">・可愛いもの
+・人間観察</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="1ea4cf43-86f4-4d99-8bd5-01e960f9d1c1" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="1ea4cf43-86f4-4d99-8bd5-01e960f9d1c1" data-field="dislikes" data-bound="true">・醜いもの、汚いもの</span>
                                     </div>
                                 </div>
                             </div>
@@ -47381,13 +47432,15 @@ HOニトロの「仕事」の相棒であり、幼少期から共に居た親友
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b6187aa1-9bbf-46f8-acb3-4ebc982c7a42" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b6187aa1-9bbf-46f8-acb3-4ebc982c7a42" data-field="likes" data-bound="true">・読書
+・コスプレ
+・フルーツパフェ</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b6187aa1-9bbf-46f8-acb3-4ebc982c7a42" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="b6187aa1-9bbf-46f8-acb3-4ebc982c7a42" data-field="dislikes" data-bound="true">・粘り気のあるもの</span>
                                     </div>
                                 </div>
                             </div>
@@ -48912,13 +48965,13 @@ HO4-A「並び立つ双耳峰」
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="383a6e24-43d6-4c10-863d-f364b012e54e" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="383a6e24-43d6-4c10-863d-f364b012e54e" data-field="likes" data-bound="true">・手品</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="383a6e24-43d6-4c10-863d-f364b012e54e" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="383a6e24-43d6-4c10-863d-f364b012e54e" data-field="dislikes" data-bound="true">・外に出かけること</span>
                                     </div>
                                 </div>
                             </div>
@@ -49384,13 +49437,16 @@ KP：ミナト　PL1：あきづ　PL2：こが
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="553dbf27-2859-4954-bc7a-60fae30682c7" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="553dbf27-2859-4954-bc7a-60fae30682c7" data-field="likes" data-bound="true">・寝ること
+・絵を描くこと
+・和菓子
+・夢日記</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="553dbf27-2859-4954-bc7a-60fae30682c7" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="553dbf27-2859-4954-bc7a-60fae30682c7" data-field="dislikes" data-bound="true">・お餅</span>
                                     </div>
                                 </div>
                             </div>
@@ -49914,13 +49970,15 @@ HO補正：芸術技能1つ（趣味）の技能値に＋50%⇒ゆめにっき�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="4f2055ca-d30f-4aac-a38e-80f2066848cb" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="4f2055ca-d30f-4aac-a38e-80f2066848cb" data-field="likes" data-bound="true">・黒色
+・絵を描くこと
+・愛猫（ノワール）</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="4f2055ca-d30f-4aac-a38e-80f2066848cb" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="4f2055ca-d30f-4aac-a38e-80f2066848cb" data-field="dislikes" data-bound="true">・色鮮やかなもの</span>
                                     </div>
                                 </div>
                             </div>
@@ -50344,13 +50402,15 @@ HO補正：芸術技能1つ（趣味）の技能値に＋50%⇒ゆめにっき�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="252b1168-04d2-4995-9f02-248bc563b255" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="252b1168-04d2-4995-9f02-248bc563b255" data-field="likes" data-bound="true">・ぬいぐるみ作り
+・砂糖菓子
+・推理モノの作品</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="252b1168-04d2-4995-9f02-248bc563b255" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="252b1168-04d2-4995-9f02-248bc563b255" data-field="dislikes" data-bound="true">・色の濃いもの（派手なもの）</span>
                                     </div>
                                 </div>
                             </div>
@@ -50921,13 +50981,15 @@ HO補正：芸術技能1つ（趣味）の技能値に＋50%⇒ゆめにっき�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="184035f6-3081-4a5f-9b9e-1ba483630033" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="184035f6-3081-4a5f-9b9e-1ba483630033" data-field="likes" data-bound="true">・アルマ
+・絵を描くこと
+・ルーファの手料理、甘いお菓子</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="184035f6-3081-4a5f-9b9e-1ba483630033" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="184035f6-3081-4a5f-9b9e-1ba483630033" data-field="dislikes" data-bound="true">・苦いもの全般</span>
                                     </div>
                                 </div>
                             </div>
@@ -51493,13 +51555,15 @@ HO2の感情について……
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2d381c9a-444c-48f7-9d1b-4e62a66e634a" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2d381c9a-444c-48f7-9d1b-4e62a66e634a" data-field="likes" data-bound="true">・牛乳
+・絵を描くこと
+・骨董品</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2d381c9a-444c-48f7-9d1b-4e62a66e634a" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="2d381c9a-444c-48f7-9d1b-4e62a66e634a" data-field="dislikes" data-bound="true">・臭いのつよいもの</span>
                                     </div>
                                 </div>
                             </div>
@@ -52054,13 +52118,14 @@ NPC：古森メメ、ソネザキさん、スグルさん、シスター・メ�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="ee9feb9d-4818-4254-a3c7-a22f67a55d8a" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="ee9feb9d-4818-4254-a3c7-a22f67a55d8a" data-field="likes" data-bound="true">・コーヒーを淹れること
+・嗜好品（お酒、コーヒー、煙草）</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="ee9feb9d-4818-4254-a3c7-a22f67a55d8a" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="ee9feb9d-4818-4254-a3c7-a22f67a55d8a" data-field="dislikes" data-bound="true">・魚介類全般</span>
                                     </div>
                                 </div>
                             </div>
@@ -52586,13 +52651,14 @@ NPC：古森メメ、ソネザキさん、スグルさん、シスター・メ�
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="8416623f-2f10-4db8-87da-83825a81b7ce" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="8416623f-2f10-4db8-87da-83825a81b7ce" data-field="likes" data-bound="true">・探検
+・ゲテモノ料理</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="8416623f-2f10-4db8-87da-83825a81b7ce" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="8416623f-2f10-4db8-87da-83825a81b7ce" data-field="dislikes" data-bound="true">・道理にかなわないもの</span>
                                     </div>
                                 </div>
                             </div>
@@ -53086,13 +53152,14 @@ KP:Fel　PL1:あきづ　PL2:すーてん　PL3:ひなた　
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="de2d0687-fdcf-40cd-be3d-8111701f89fa" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="de2d0687-fdcf-40cd-be3d-8111701f89fa" data-field="likes" data-bound="true">・「ザ・ウィンドフォールズ」
+・デコレーション</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="de2d0687-fdcf-40cd-be3d-8111701f89fa" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="de2d0687-fdcf-40cd-be3d-8111701f89fa" data-field="dislikes" data-bound="true">・方角（方向音痴）</span>
                                     </div>
                                 </div>
                             </div>
@@ -53610,13 +53677,14 @@ PCがその質問に対して何と答えたか教えてください。
                                 <div>
                                     <span class="text-[9px] text-rose-500 dark:text-rose-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart mr-1"></i>好きなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="989ef1e8-7933-41dd-be3d-6bcb6d683599" data-field="likes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="989ef1e8-7933-41dd-be3d-6bcb6d683599" data-field="likes" data-bound="true">・独りでいること
+・コーヒー</span>
                                     </div>
                                 </div>
                                 <div>
                                     <span class="text-[9px] text-blue-500 dark:text-blue-400 font-black block mb-1.5 uppercase tracking-widest"><i class="fas fa-heart-broken mr-1"></i>嫌いなもの</span>
                                     <div class="p-3 rounded-xl text-sm font-bold text-theme-sub bg-slate-50/80 dark:bg-slate-900/40 border border-slate-100 dark:border-slate-800 shadow-sm">
-                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="989ef1e8-7933-41dd-be3d-6bcb6d683599" data-field="dislikes" data-bound="true">未記入</span>
+                                        <span class="editable-field block w-full whitespace-pre-wrap force-dark-text" data-id="989ef1e8-7933-41dd-be3d-6bcb6d683599" data-field="dislikes" data-bound="true">・警察（という組織）</span>
                                     </div>
                                 </div>
                             </div>
@@ -54337,8 +54405,8 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
             
                 <div class="flex items-center gap-2 text-[9px] font-black dark:text-slate-300 force-dark-text">
                     <span class="w-8 shrink-0">20代</span>
-                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:48%"></div></div>
-                    <span class="w-4 text-right">48</span>
+                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:49%"></div></div>
+                    <span class="w-4 text-right">49</span>
                 </div>
             
                 <div class="flex items-center gap-2 text-[9px] font-black dark:text-slate-300 force-dark-text">
@@ -54355,8 +54423,8 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
             
                 <div class="flex items-center gap-2 text-[9px] font-black dark:text-slate-300 force-dark-text">
                     <span class="w-8 shrink-0">不明</span>
-                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:1%"></div></div>
-                    <span class="w-4 text-right">1</span>
+                    <div class="flex-1 bg-slate-200 dark:bg-slate-700 h-1 rounded-full"><div class="bg-indigo-400 h-full" style="width:0%"></div></div>
+                    <span class="w-4 text-right">0</span>
                 </div>
             </div>
                         </div>
@@ -54579,10 +54647,10 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
         
 
     <!-- Modals -->
-    <div id="confirmModal" class="modal-overlay">
+    <div id="confirmModal" class="modal-overlay" style="display: none;">
         <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl max-w-sm w-full text-center shadow-2xl modal-box modal-bg">
             <h3 class="text-lg font-black mb-2 text-theme-main modal-text">確認</h3>
-            <p id="confirmMessage" class="text-theme-sub text-xs mb-6 modal-text"></p>
+            <p id="confirmMessage" class="text-theme-sub text-xs mb-6 modal-text"><span class="font-bold text-indigo-500">秌羽 日月</span><br>は既に登録されています。<br>データを更新しますか？</p>
             <div id="confirmButtonsStandard" class="flex gap-2 w-full">
                 <button onclick="closeConfirm()" class="flex-1 py-3 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-black rounded-xl text-xs force-dark-text">キャンセル</button>
                 <button id="confirmExecBtn" class="flex-1 py-3 bg-rose-500 text-white font-black rounded-xl text-xs">実行</button>
@@ -54598,89 +54666,142 @@ SERaグループとは一体･･･人知の及ばない世界、実際に目�
     <div id="rawTextModal" class="modal-overlay" style="display: none;">
         <div class="bg-white dark:bg-slate-800 p-6 rounded-3xl max-w-2xl w-full shadow-2xl flex flex-col max-h-[80vh] modal-box modal-bg">
             <h3 class="text-lg font-black mb-4 text-theme-main modal-text">ファイルデータ</h3>
-            <pre id="rawTextArea" class="flex-1 bg-slate-50 dark:bg-slate-900 p-4 rounded-xl overflow-y-auto text-[10px] font-mono whitespace-pre-wrap text-theme-sub modal-text modal-pre-bg">倉守　衛（くらもり　まもる） (29(+1))  フリーター（元警備員） 女性
-STR:75	DEX:65	INT:55
-CON:60	APP:80	POW:60
-SIZ:70	EDU:70	移動率:8
-耐久力：13
-マジック・ポイント：12
-正気度：69
-幸運：76
+            <pre id="rawTextArea" class="flex-1 bg-slate-50 dark:bg-slate-900 p-4 rounded-xl overflow-y-auto text-[10px] font-mono whitespace-pre-wrap text-theme-sub modal-text modal-pre-bg">弁財天　那由多（べんざいてん　なゆた） (28)  刑事（用心棒/クトゥルフ2015参照） 女性
+STR:12	DEX:16	INT:16
+CON:11	APP:15	POW:14
+SIZ:13	SAN:70	EDU:19
+耐久力：12
+マジック・ポイント：14
+正気度：73
 ダメージ・ボーナス：+1D4
-ビルド：1
-住所：藍城市
-出身：日本
+出身：日本（K県）
+学校・学位：
+精神的な障害：
 ----------------------------------------
 【技能】
-威圧：60%
-運転（自動車）：60%
-応急手当：50%
-隠密：72%
-回避：65%
-聞き耳：60%
-近接戦闘（テコンドー）：82%
-クトゥルフ神話：15%
-考古学：3%
-信用：20%
-投擲：60%
-図書館：51%
-ほかの言語（英語）：21%
-目星：70%
+言いくるめ：60%
+回避：68%
+鍵開け：80%
+隠れる：66%
+聞き耳：40%
+クトゥルフ神話：26%
+芸術（イカサマ）：80%
+経理：40%
+忍び歩き：40%
+図書館：28%
+値切り：40%
+変装：22%
+マーシャルアーツ：60%
+目星：45%
+歴史：26%
+【火器】
+拳銃：45%
+【近接戦】
+キック：80%
 ----------------------------------------
 【武器】
-素手：82% 1D3+DB (射程:-, 攻撃回数:-, 装弾数:-, 故障:-)
+キック：-% 1D6+DB (射程:タッチ, 攻撃回数:1, 装弾数:-, 故障:-)
+こぶし：-% 1D3+DB (射程:タッチ, 攻撃回数:1, 装弾数:-, 故障:-)
+頭突き：-% 1D4+DB (射程:タッチ, 攻撃回数:1, 装弾数:-, 故障:-)
 ----------------------------------------
-【装備と所持品】
-
+【冒険の装備とその他の所持品】
+スマートフォン (個数:3) 私用、連絡用、仕事用。仕事用はもちろん裏稼業の方
+財布 (個数:1) キャッシュは原則持ち歩かない
+棒キャンディ (個数:-) 〇ュッパチャップス的な。いっぱい持ち歩いている
+ピッキングツール (個数:1) 鍵開け道具一式。金庫の開錠もお手の物
+----------------------------------------
+【探索者のデータ】
+住所：
+描写：
+友人＆家族：
+狂気の症状：
+負傷：
+傷跡など：
 ----------------------------------------
 【収入と財産】
-支出レベル：
-現金：
-資産：
+収入：
+手持ち現金：
+預金：
+個人資産：
+不動産：
 ----------------------------------------
-【バックストーリー】
-▼ 容姿の描写
-目つき悪い、ハンサムショート、ピアス、細身
-▼ イデオロギー／信念
-[キーコネクション]
-女だからってナメてんじゃねぇぞ、を地でいく人
-▼ 重要な人々
-▼ 意味のある場所
-倉庫裏の一角（サボりに使うスペースの中で特にお気に入り）
-⇒仕事を辞めたことで使えなくなってしまったので新しい場所を探している。
-▼ 秘蔵の品
-▼ 特徴
-ヘビースモーカー（ただし吸ってるタバコはそれ程重くない）ヤンキー女子。幼い頃に道場に通っていたこともあって腕っぷしは強いが間違った方向に使いがち。とくに男性に対するアタリは強く、少しでも卑下にされていると感じたら最悪手が出るくらいの温度感。
-▼ 負傷、傷跡
-▼ 恐怖症、マニア
-▼ 魔道書、呪文、アーティファクト
-▼ 遭遇した超自然の存在
+【読んだクトゥルフ神話の魔道書】
+
 ----------------------------------------
-【仲間の探索者】
+【アーティファクト／学んだ呪文】
+
+----------------------------------------
+【遭遇した超自然の存在】
 
 ----------------------------------------
 【メモ】
-160cm/51kg
-名前の由来はそのまま「倉を守る」
+【三行で分かる弁財天　那由多（べんざいてん　なゆた）】
+幼い頃から裏社会に身を置く女性。格好だけの刑事をしているが、自分にとってそれが一番都合が良いだけ。
+何よりもお金が好き。自分の命の次にお金が大事。ただし、キャッシュを持ち歩くことは好まない。
+気が強くわがままで、腕っぷしも強い。女性としての魅力はないが、妙なカリスマ性がある。
+---------------------------------------------------------------------------
+【特徴】2-7：珍しい技能
+　　　　芸術（イカサマ）*INT16×5%=80
+【性格】男勝り、強情、守銭奴
+【誕生日】6月16日⇒7月7日へ変更（『弁才天供』の日）
+時代設定：2022年現代、K県
+【容姿】金髪、肌黒、スレンダー
+身長/体重　161cm/48kg
+【関係性】
+独身、身寄りなし
 
-実家が道場の一人娘。高卒。中学から筋金入りのヤンキー女子で、巷でもそこそこ有名な不良グループに属している。
-仕事は母方の叔父からの紹介で、渋々ながら続けているし出勤もするが、結構な頻度で業務中にサボっている。
-また、中高ととある男性教諭から見下された態度を取られ続けたことから基本的に男性（とくに年上）のことを良く思っていない。喧嘩っぱやい性格も相まって、口よりも先に手が出ることもしばしばある。
-黙っていれば、じっとしていれば容姿端麗なため繁華街等でナンパに合うことも多く、それが余計に彼女の男性に対する偏った見方を助長している。
-吸っているタバコの銘柄はKOOLライト。
----------------------------------------------------------------------------------------------
-職業：警備員（クトゥルフ2020参照）
-応急手当、回避、聞き耳、近接戦闘（格闘）、ほかの言語、目星、対人関係技能（威圧）、任意の他の技能（運転（自動車））
-信用：9～40％
-職業技能ポイント：[EDU×2+STR×2]
+【探索者・NPCとの間柄】
+・真中 清善
+決して相容れないながらも、仕事の腕には一目置いている。
+なんだかんだリスクヘッジがしっかりしているので、同じ立ち位置にいることが多い。
+中井を如何にハメるか、という点に置いては気の合う仲だろう。
+・堂 助兵衛
+K課の中で唯一足を出した男（あまりにもしつこく関係を迫ってきたため。
+常日頃からの言動からか、多少のことでは動じなくなっている。
+まともに会話したのは⋯いつだろうか？
+・中井 庄志
+普段からからかって遊んでいる。「面白い」以外の感情はない。
+良い金ヅルであり、時には真中と手を組んで貶めることもある。
 
-【縁】
-・無縁（初期SAN値+10）
-あなたは今までこの藍城で奇跡的に奇妙な事とは無縁だった。
+【メモ】
+台詞：「悪銭身につかず、なんて誰が言い出したんやろなぁ。金は金や。大事にせな、あかんよな？」
+名前の由来：弁財天（七福神、金運の神）＋那由多（お金の桁。10の60乗）
 
-【特徴】
-3-6：格闘センスの持ち主
-幼いときから道場で鍛えられてきた。素手の戦闘技能３つ（キック、組み付き、頭突き）の基本成功率は50％である。→近接戦闘（テコンドー）に置き換え</pre>
+一人称：俺
+二人称：オマエ、呼び捨て、蔑称（カス、クズ）
+乱暴な関西弁。特に男性にはアタリが強い。（性別的な見方で朋林にはなんとなく苦手意識があるかもしれない。
+
+【本文】
+両親は借金地獄の末に消息不明。自身も人身売買の商品として海外へ流されそうになったが、その境遇から命からがら逃げ延び、顔と名前を変えて社会へ身を潜めている女性。
+幼少期は劣悪な環境の中で暮らしていた。満足に食べ物にありつけず、週に何度かやってくる借金の取り立て屋におびえる毎日だった。
+逃亡生活の最中で、裏社会のとあるチャイニーズマフィアと繋がりを持つ。そこで彼女は生きるための術やある程度の金銭、衣食住を手に入れた。
+現在も時折、K課の業務(?)の傍らで彼らからの仕事も引き受けている。
+とにかくお金に強い執着を持っており、「如何に楽をして金を稼ぐか」と言う信条のもとでギャンブルやマネーロンダリングで得た金銭を着服している。
+金のためなら裏切りは当たり前。犯罪者とも平気で手を取り、隠ぺい工作にも余念がない。
+性格は男勝りで強情。世話になったチャイニーズマフィアの影響か、強い関西弁を使う。
+K課にはなんのしがらみもなく、「警察」と言う隠れ蓑が欲しかったので適当に経歴詐称して試験を受けたら受かったという感じ（筆記は替え玉。実技はもともとの腕っぷしで通った）
+過去の犯罪や未解決事件から金の臭いを感じるものがあれば独自で捜査を行い、関係者に接触しては仕事の話を持ち掛けている（警察よりも犯罪者との繋がりの方が強いかもしれない。
+趣味は酒と勝てるギャンブル。酒は基本的に貰い物や賭場に行った際に飲んでいるが、必要で迫られれば自分で買ったりもする。
+好きな食べものは高カロリーの食べ物。嫌いな食べ物は野菜。
+最近の悩みは特になし。自由気ままな生活を送っている。
+---------------------------------------------------------------------------
+❐K課で生えた設定(?)
+・実は処女
+操⇒金⇒命。強い貞操観念があり、表向きは下ネタや下品な行動も厭わないように見せかけて実は生娘。男性に興味がないわけではないが、理想が高い（と言うのも、周りにロクな男がいなかったから、と言う裏付けもありそうだが...。
+面と向かって公言するようなことはないが、咄嗟の場面では口をついて出ることもあるかもしれない。
+---------------------------------------------------------------------------
+職業：刑事（用心棒/クトゥルフ2015参照）
+鍵開け、隠れる、忍び歩き、心理学⇒経理、追跡⇒言いくるめ、変装
+任意の近接戦技能⇒キック
+任意の火器技能⇒拳銃
+心理学⇒経理：相手を気にかけているわけがないので経理へ変更。勘定している時間が至福の時。
+追跡⇒言いくるめ：追跡、ってなんだ...？とにかく口は上手そう。PLの語彙がないので技能に頼ります。
+【興味技能】
+回避：裏稼業の中では危険に巻き込まれることも多々あった。修羅場をくぐり抜けてきた経験。
+値切り：定価、ってなんだ...？正直者がバカを見る。1円でも安く買い叩く！
+マーシャルアーツ：生きるための技術。女性でありながらジークンドーの使い手。戦闘においてはあまり手を使った体術を好まず、足で戦う。
+
+技能ポイント＝DEX×10+EDU+10で算出(350P)</pre>
             <button onclick="closeRawModal()" class="mt-4 w-full py-3 bg-slate-900 text-white font-black rounded-xl text-xs">閉じる</button>
         </div>
     </div>
@@ -55864,6 +55985,22 @@ function updateSessionOptions() {
 
             const strVal = parseInt(extract(/STR[:：]\s*(\d+)/i));
             const is7th = strVal > 25;
+            // 正気度：「正気度：」の現在値を最優先し、なければ「SAN:」を使う
+            let sanVal = extract(/正気度[:：]\s*(\d+)/);
+            if (!sanVal || sanVal === "0") {
+                sanVal = extract(/SAN[:：]\s*(\d+)/i) || "0";
+            }
+
+            // 幸運：記載があればそれを使い、なければ6版は POW×5 で自動算出する
+            let lukVal = extract(/(?:幸運|LUK)[:：]\s*(\d+)/);
+            if (!lukVal || lukVal === "0") {
+                const powVal = parseInt(extract(/POW[:：]\s*(\d+)/i)) || 0;
+                if (!is7th && powVal > 0) {
+                    lukVal = String(powVal * 5);
+                } else {
+                    lukVal = "0";
+                }
+            }
 
             let birthday = "未設定";
             const bdayMatch = text.match(/【誕生日】([^\s\n]+)/);
@@ -55904,10 +56041,10 @@ function updateSessionOptions() {
                     APP: extract(/APP[:：]\s*(\d+)/i), SIZ: extract(/SIZ[:：]\s*(\d+)/i),
                     INT: extract(/INT[:：]\s*(\d+)/i), EDU: extract(/EDU[:：]\s*(\d+)/i),
                     HP: extract(/(?:耐久力|HP)[:：]\s*(\d+)/) || "0", MP: extract(/(?:マジック・ポイント|MP)[:：]\s*(\d+)/) || "0",
-                    SAN: extract(/(?:正気度|SAN)[:：]\s*(\d+)/) || "0",
-                    LUK: extract(/(?:幸運|LUK)[:：]\s*(\d+)/) || "0"
+                    SAN: sanVal,
+                    LUK: lukVal
                 },
-                san: parseInt(extract(/(?:正気度|SAN)[:：]\s*(\d+)/, "50")),
+                san: parseInt(sanVal) || 50,
                 birthday: birthday,
                 color: extract(/カラー[:：]\s*(#[0-9a-fA-F]{6})/, "#6366f1"),
                 version: is7th ? "7版" : "6版",
@@ -58038,7 +58175,7 @@ function updateSessionOptions() {
                 <div id="customPromptModal" class="fixed inset-0 z-[9999] items-center justify-center bg-black/60 backdrop-blur-sm transition-opacity opacity-0 hidden">
                     <div class="bg-slate-800 rounded-2xl shadow-2xl border border-slate-700 w-[95%] max-w-2xl overflow-hidden flex flex-col transform transition-transform duration-300 scale-95">
                         <div class="p-4 border-b border-slate-700 flex justify-between items-center bg-slate-900/50">
-                            <h3 id="customPromptTitle" class="text-white font-bold text-sm tracking-wider whitespace-pre-wrap leading-relaxed">「gender」を編集</h3>
+                            <h3 id="customPromptTitle" class="text-white font-bold text-sm tracking-wider whitespace-pre-wrap leading-relaxed">「likes」を編集</h3>
                             <button onclick="closeCustomPrompt(null)" class="text-slate-400 hover:text-rose-500 transition-colors w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10"><i class="fas fa-times"></i></button>
                         </div>
                         <div class="p-5 bg-slate-800">
